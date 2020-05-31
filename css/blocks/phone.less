@@ -1,0 +1,242 @@
+// main: ../style.less
+
+.phone.modal-phone {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone__body {
+    width: 20rem;
+    height: 42rem;
+    
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    z-index: 200;
+    
+    overflow: hidden;
+
+    background-color: @dark-gray;
+    border: .3rem solid @black;
+    border-radius: 1.5rem;
+    
+    box-shadow: 0 -0.15rem 0 fade(@white, 50%);
+    
+    @media @desktop {
+        width: 16rem;
+        height: 33.6rem;
+        
+        top: 15%;
+        right: 10rem;
+    }
+    
+    @media @laptop {
+        right: 3rem;
+    }
+    
+    @media @tablet {
+        width: 14.4rem;
+        height: 30.24rem;
+        
+        top: 20%;
+        
+        border-radius: 1.2rem;
+    }
+    
+    @media @mobile {
+        width: 100%;
+        height: 100%;
+        
+        position: static;
+        
+        border: 0;
+        border-radius: 0;
+    }
+}
+
+.phone__body.modal-phone { 
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    @media @mobile {
+        width: 14.4rem;
+        height: 30.24rem;
+        
+        position: relative;
+        top: 2rem;
+        
+        border: .3rem solid @black;
+        border-radius: 2rem;
+    
+        box-shadow: 0 -0.15rem 0 fade(@white, 50%);
+    }
+}
+
+.phone__background {
+    width: auto;
+    height: 100%;
+    
+    @media @mobile {
+        height: 100vh;
+    }
+}
+
+.phone__background-img {
+    height: 100%;
+    
+    animation: go-left-right 25s infinite alternate linear;
+
+    position: relative;
+}
+
+.phone__content {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+}
+
+.phone__content-inner {
+    width: 100%;
+    
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    @media @mobile {
+        margin-bottom: 4rem;
+    }
+}
+
+.log__sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone__login-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: @white;
+}
+
+.phone__sign-a {
+    margin-top: .3rem;
+    
+    font-size: .8rem;
+    color: @white;
+    
+    opacity: 50%;
+    
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+.phone__forms {
+    width: 100%;
+    
+    padding: 1rem 0;
+}
+
+.phone__email-form,
+.phone__password-form {
+    width: 100%;
+    height: 3rem;
+    
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    
+    border: .1rem solid @dark-gray;
+    border-radius: .5rem;
+    
+    backdrop-filter: blur(.1rem);
+    background-color: fade(@dark-gray, 25%);
+    
+    font-size: .8rem;
+    font-family: 'Montserrat';
+    color: @white;
+    
+    @media @desktop {
+        height: 2.5rem;
+    }
+    
+    @media @tablet {
+        height: 2rem;
+    }
+    
+    @media @mobile {
+        height: 3rem;
+    }
+}
+
+.phone__login-btn,
+.phone__loginfacebook-btn {
+    width: 100%;
+    height: 3rem;
+    
+    margin-bottom: .5rem;
+    
+    border: 0;
+    border-radius: .5rem;
+    
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: @white;
+    
+    cursor: pointer;
+    
+    transition: .2s linear;
+    
+    &:hover {
+        opacity: 85%;
+    }
+    
+    @media @desktop {
+        height: 2.5rem;
+        
+        font-size: .8rem;
+    }
+    
+    @media @tablet {
+        height: 2rem;
+        
+        font-size: .6rem;
+    }
+    
+    @media @mobile {
+        height: 3rem;
+        
+        font-size: 1rem;
+    }
+}
+
+.phone__login-btn {
+    background-color: @golden-light;
+}
+
+.phone__loginfacebook-btn {
+    backdrop-filter: blur(.2rem);
+    background-color: fade(@gray, 25%);
+}
+
+
+
+
+
+
+
+
+
+
+
+

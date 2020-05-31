@@ -1,0 +1,173 @@
+// compress: true
+
+@import "var-amounts";
+
+//html { visibility:hidden; }
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: @gray;
+}
+
+body.en :lang(uk) {
+    display: none;
+}
+
+body.uk :lang(en) {
+    display: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+b {
+    font-weight: 500;
+}
+
+a {
+    margin: 0;
+    
+    text-decoration: none;
+    color: @black;
+}
+
+a:hover {
+    transition: .2s linear;
+    opacity: 70%;
+}
+
+button:focus {
+    outline: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+#fullpage {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#fullpage section {
+    height: 100vh;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.flex-reverse {
+    @media @tablet {
+        flex-direction: row-reverse;
+    }
+}
+
+.absolute {
+    position: absolute;
+}
+
+.z100 {
+    z-index: 100;
+}
+
+.bottom {
+    left: 0;
+    bottom: -100%;
+}
+
+.mobile {
+    display: none;
+    
+    @media @mobile {
+        display: block;
+    }
+}
+
+.mobile_none {
+    @media @mobile {
+        display: none;
+    }
+}
+
+.tablet_none {
+    @media @tablet {
+        display: none;
+    }
+}
+
+.bg_crimis {
+    background-color: #ec413d;
+}
+
+.bg_yellow {
+    background-color: #fef102;
+}
+
+.bg_turquoise {
+    background-color: #00aeaf;
+}
+
+.bg_green {
+    background-color: #74c046;
+}
+
+.bg_blue {
+    background-color: #5e8bc6;
+}
+
+.bg_orange {
+    background-color: #f7a619;
+}
+
+
+/*Keyframes*/
+@keyframes go-left-right { 
+    from {
+      left: 0px;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/section";
+@import "blocks/mask";
+@import "blocks/sidebar";
+@import "blocks/laptop";
+@import "blocks/desktop";
+@import "blocks/login";
+@import "blocks/phone";
+@import "blocks/contact";
+@import "blocks/works";
+@import "blocks/team";
+@import "blocks/wedo";
+@import "blocks/vacancies";
+@import "blocks/footer";

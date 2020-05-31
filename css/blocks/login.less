@@ -1,0 +1,102 @@
+// main: ../style.less
+
+.login__background {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login__background-img {
+    height: 60vh;
+    
+    background: url("../images/planet.jpg") no-repeat;
+}
+
+.login__description-inner {
+    width: 50%;
+    
+    padding: 10rem 5rem;
+    
+    font-size: 2rem;
+    color: @white;
+    
+    @media @desktop {
+        padding: 5rem 4rem;
+        
+        font-size: 1.5rem;
+    }
+    
+    @media @tablet {
+        padding: 3rem;
+        
+        font-size: 1.2rem;
+    }
+    
+    @media @tablet-sm {
+        font-size: 1rem;
+    }
+}
+
+.login__title {
+    margin-bottom: 2rem;
+    
+    font-size: 2em;
+    
+    white-space: nowrap;
+    
+    @media @tablet {
+        white-space: normal;
+    }
+    
+    @media @tablet-sm {
+        margin-bottom: 0;
+    }
+}
+
+.login__slogan {
+    width: 100%;
+    height: 25vh;
+    
+    position: relative;
+    z-index: 0;
+    
+    @media @laptop {
+        height: 20vh;
+    }
+    
+    @media @tablet {
+        height: 27vh;
+    }
+}
+
+.login__slogan-inner {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 0 5rem;
+    
+    @media @tablet {
+        padding: 0 3rem;
+    }
+    
+    @media @tablet-sm {
+        width: 60%;
+    }
+}
+
+.login__slogan-text {
+    font-size: 3.75rem;
+    font-weight: 600;
+    
+    @media @laptop {
+        font-size: 3rem;
+    }
+    
+    @media @tablet {
+        font-size: 2rem;
+    }
+}

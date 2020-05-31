@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125">
+  <g id="Group_7" data-name="Group 7" transform="translate(-103 -827)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(103 827)" fill="none" stroke="#000" stroke-width="2">
+      <circle cx="62.5" cy="62.5" r="62.5" stroke="none"/>
+      <circle cx="62.5" cy="62.5" r="61.5" fill="none"/>
+    </g>
+    <path id="Icon_metro-apps" data-name="Icon metro-apps" d="M7.712,17.712h10v-10h-10Zm15,30h10v-10h-10Zm-15,0h10v-10h-10Zm0-15h10v-10h-10v10Zm15,0h10v-10h-10v10Zm15-25v10h10v-10Zm-15,10h10v-10h-10Zm15,15h10v-10h-10Zm0,15h10v-10h-10v10Z" transform="translate(138.288 862.288)"/>
+  </g>
+</svg>

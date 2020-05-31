@@ -1,0 +1,455 @@
+// main: ../style.less
+
+.our__works {
+    width: 100%;
+    height: 100%;
+}
+
+.video-works {
+    width: 100%;
+    height: 50%;
+    
+    position: relative;
+    
+    //overflow: hidden;
+    
+    &:after {
+        content: "";
+        
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+
+.video__intro-works {
+    width: 100%;
+    
+    //overflow: hidden;
+    
+    position: relative;
+    z-index: 0;
+}
+
+.portfolio__outer {
+    width: 100%;
+    
+    position: relative;
+    //top: 10rem;
+}
+
+.portfolio {
+    width: 100%;
+    padding: 1.5rem;
+    
+    position: relative;
+    z-index: 100;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media @mobile {
+        padding: 0;
+    }
+}
+
+.portfolio__col {
+    position: relative;
+    
+    flex-basis: 33.33333%;
+    
+    @media @mobile {
+        flex-basis: 50%;
+    }
+    
+    @media @mobile-sm {
+        flex-basis: 100%;
+    }
+}
+.work {
+    height: 100%;
+    
+    padding: 2rem;
+    
+    position: relative;
+    z-index: 100;
+    
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    
+    @media @mobile {
+        max-width: 370px;
+        
+        margin: 0 auto;
+    }   
+}
+
+.work:hover
+.work__mask {
+    display: flex;
+}
+
+.work__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 30rem;
+}
+
+.work__mask {
+    width: 100%;
+    height: 100%;
+    
+    padding: .5rem;
+    
+    display: none;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    
+    background-color: rgba(0, 0, 0, .7);
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    transition: .2s linear;
+}
+
+.work__title {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: @white;
+    
+    @media @netbook {
+        font-size: 2rem;
+    }
+    
+    @media @tablet-sm {
+        font-size: 1rem;
+    }
+    
+    @media @mobile {
+        font-size: 1.5rem;
+    }
+}
+
+.works {
+    margin: 2.8rem 0;
+}
+
+.works--page {
+    padding-top: .5rem;
+    
+    @media @mobile {
+        padding-top: .5rem;
+    }
+}
+
+.works__nav {
+    display: flex;
+    justify-content: center;
+    
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+.works__nav-link {
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    color: fade(@black, 70%);
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    @media @mobile {
+        margin: 0 1rem;
+        font-size: .8rem;
+    }
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+    
+    background-color: fade(@black, 80%);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    &.show {
+        display: flex;
+    }
+}
+
+.modal--other {
+    
+    @media @mobile {
+    width: 100%;
+    padding: 2rem;
+    }
+    
+    @media @mobile-sm {
+    width: 100%;
+    padding: 1rem;
+    }
+}
+
+.modal__dialog {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    
+    background-color: @white;
+    
+    &--sm {
+        max-width: 900px;
+    }
+}
+
+.modal__close {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    
+    position: absolute;
+    top: .9rem;
+    right: .9rem;
+    z-index: 1;
+    
+    transition: transform .2s linear;
+    
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+.modal__content {
+    padding: 5rem 1rem;
+}
+
+.modal__title {
+    margin-bottom: 3.6rem;
+    
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal__subtitle {
+    text-transform: uppercase;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 400;
+}
+
+.modal-timeline__btns {
+    text-align: center;
+    
+    @media @mobile {
+        width: 100%;
+        margin-top: .3rem;
+    }
+}
+
+.modal-work {
+    display: flex;
+    
+    @media @mobile {
+        display: block;
+    }
+}
+
+.modal-work__preview {
+    width: 65%;
+    
+    padding: 3rem;
+    
+    position: relative;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media @tablet {
+        width: 50%;
+    }
+    
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.modal-phone__video {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    top: -.3rem;
+}
+.modal-phone__photo {
+    width: 100%;
+}
+
+.modal-work__content {
+    width: 35%;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+    
+    position: relative;
+    
+     @media @tablet {
+        width: 50%;
+         padding: 2rem 3rem 1rem 2rem;
+    }
+    
+    @media @mobile {
+        width: 100%;
+        padding: 2rem 3rem 1rem 2rem;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 1.2rem;
+}
+
+.modal-work__title {
+    margin-top: 2rem;
+    margin-bottom: .2rem;
+    
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    @media @mobile {
+        font-size: 1.5rem;
+        margin-top: .3rem;
+    }
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: @dark-gray;
+    text-transform: uppercase;
+    
+    @media @mobile {
+        font-size: 0.6rem;
+    }
+}
+
+.modal-work__info-divider {
+    margin: 0 .8rem;
+}
+
+.modal-work__client {
+    margin-bottom: 1.2rem;
+}
+
+.modal-work__client-title {
+    margin-bottom: .2rem;
+    
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal-work__client-company {
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @dark-gray;
+}
+
+.modal-work__text {
+    margin-bottom: 8.66rem;
+    
+    font-size: .8rem;
+    line-height: 2;
+    color: @dark-gray;
+    font-weight: 300;
+    
+     @media @mobile {
+        margin-bottom: 4rem;
+    }
+}
+
+.modal-work__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 2rem;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal-work__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: .5rem;
+    
+    font-size: .8rem;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.modal-link__icon {
+    height: 1rem;
+    
+    margin-right: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

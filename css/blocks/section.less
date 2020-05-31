@@ -1,0 +1,294 @@
+// main: ../style.less
+
+.section.first {
+    background: linear-gradient(rgba(255,149,149,1) 0%, rgba(70,23,23,1) 100%);
+}
+
+.section.second {
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgba(162,162,162,1) 100%);
+}
+
+.section.third {
+    background: linear-gradient(rgba(236,236,236,1) 0%, rgba(185,185,185,1) 100%);
+}
+
+.containers {
+    width: 100%;
+    height: 100%;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    color: @white;
+}
+
+.left__container {
+    width: 50%;
+    height: 100%;
+    
+    position: relative;
+    
+    @media @netbook {
+        width: 40%;
+    }
+    
+    @media @tablet {
+        display: none;
+    }
+}
+
+.left__container--inner {
+    padding: 7.5rem 5rem;
+    
+    position: absolute;
+    left: 0;
+    bottom: 7%;
+    z-index: 0;
+    
+    font-size: 1.6rem;
+    
+    @media @desktop {
+        padding: 7rem 2.5rem;
+    }
+    
+    @media @laptop {
+        font-size: 1.2rem;
+    }
+}
+
+.title__item {
+    font-size: 1.6em;
+}
+
+.subtitle__item {
+    margin-top: .7rem;
+    
+    //white-space: nowrap;
+}
+
+.left__container--btn {
+    width: 21.875rem;
+    height: 4rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 1.5rem;
+    margin-top: 1.25rem;
+    
+    background-color: @red;
+    
+    border-radius: 1rem;
+    
+    text-decoration: none;
+    color: @white;
+    
+    @media @laptop {
+        width: 17rem;
+        height: 3rem;
+    }
+    
+}
+
+.right__container {
+    width: 50%;
+    
+    position: relative;
+    top: -5.625rem;
+    
+    background: url("../images/bg1.jpg") no-repeat;
+    background-size: cover;
+    
+    @media @netbook {
+        width: 60%;
+    }
+    
+    @media @tablet {
+        width: 100%;
+    }
+    
+    @media @mobile {
+        top: -4rem;
+    }
+}
+
+.right__container.second {
+    background: url("../images/bg3.jpg") no-repeat;
+    background-size: cover;
+}
+
+.right__container.third {
+    background: url("../images/bg2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.right__container--inner {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    
+    padding: 0 2rem;
+    
+    font-size: 1.75rem;
+    
+    @media @desktop {
+        font-size: 1.4rem;
+    }
+    
+    @media @laptop {
+        font-size: 1.3rem;
+    }
+    
+    @media @netbook {
+        font-size: 1.4rem;
+    }
+    
+    @media @tablet {
+        padding: 6rem 3rem 1rem;
+        
+        flex-direction: column;
+        align-items: center;
+        
+        font-size: 1.6rem;
+    }
+    
+    @media @tablet-sm {
+        padding: 0 1rem;
+        
+        font-size: 1.3rem;
+    }
+    
+    @media @mobile {
+        //flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    
+    @media @mobile-sm {
+        padding: 0 .4rem;
+        
+        font-size: .9rem;
+    }
+}
+
+.slick__area {
+    width: 60%;
+    //max-width: 32rem;
+    height: 70%;
+    
+    position: relative;
+    top: 5rem;
+    z-index: 200;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 1rem 0rem;
+    
+    @media @mobile {
+        height: 80%;
+        
+        top: 0;
+    }
+}
+
+.phones__img {
+    width: 100%;
+    max-height: 60rem;
+    
+    object-fit: contain;
+    
+    @media @desktop {
+        max-height: 30rem;
+    }
+    
+    @media @tablet {
+        max-height: 25rem;
+    }
+}
+
+.slick__area-desktop {
+    width: 80%;
+    height: 100%;
+    
+    position: relative;
+    z-index: 200;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desktops {
+    display: flex;
+    justify-content: center;
+}
+
+.desktop__img {
+    width: 100%;
+}
+
+.phones__img {
+    height: 45rem;
+    
+    @media @desktop-large {
+       height: 40rem;
+    }
+    
+    @media @tablet {
+        height: 45rem;
+    }
+    
+    @media @tablet-sm {
+        height: 34rem;
+    }
+    
+    @media @mobile {
+        height: 25rem;
+        
+        margin-top: 4rem;
+    }
+    
+    @media @mobile-sm {
+        height: 18rem;
+    }
+}
+
+.right__container--description {
+    height: 30%;
+    
+    padding: 1rem;
+    margin-bottom: 3rem;
+    
+    display: none;
+    
+    position: relative;
+    z-index: 200;
+    
+    @media @tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    @media @mobile {
+        height: 20%;
+    }
+}
+
+.description__title {
+    margin-bottom: 1rem;
+    
+    font-weight: 400;
+    font-size: 1.875em;
+    //white-space: nowrap;
+}
+    

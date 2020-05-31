@@ -1,0 +1,89 @@
+// main: ../style.less
+
+.footer {
+    width: 100%;
+    
+    position: relative;
+    bottom: 0;
+    z-index: 100;
+    
+    font-size: 1.2rem;
+    color: @white;
+    
+    @media @tablet {
+        display: none;
+    }
+    
+    &.index {
+        position: relative;
+        bottom: 10rem;    
+    
+        display: flex;
+        justify-content: flex-end;
+    
+        @media @mobile {
+            display: none;
+        }
+    }
+}
+
+.footer.absolute {
+    position: absolute;
+}
+
+.footer__inner {
+    width: 100%;
+    
+    padding: 1.5rem 4rem;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: @dark-gray;
+    
+    @media @tablet-sm {
+        padding: 1.5rem;
+    }
+}
+
+.footer__right.index {
+    min-width: 20rem;
+    
+    margin-bottom: 2rem;
+    
+    @media @desktop {
+        min-width: 15rem;
+    }
+}
+
+.footer__roots-text {
+    padding: .2rem;
+    
+    @media @tablet-sm {
+        font-size: .8rem;
+    }
+}
+
+.social__inner {
+    display: flex;
+    justify-content: space-between;
+    
+    &.side {
+        margin-right: 2rem;
+    }
+}
+
+.social__item {
+    margin-right: 2rem;
+    
+    &.side {
+        margin-right: 0;
+    }
+}
+
+.social__img {
+    &.side {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

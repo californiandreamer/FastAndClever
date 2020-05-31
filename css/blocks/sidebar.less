@@ -1,0 +1,149 @@
+// main: ../style.less
+
+.sidebar {
+    display: none;
+    
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500;
+}
+
+.sidebar.active {
+    display: block;
+}
+
+
+.sidebar__inner {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar__close {
+    width: 4rem;
+    height: 4rem;
+    
+    padding: 1rem;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 700;
+    
+    border: none;
+    background-color: transparent;
+    
+    cursor: pointer;
+}
+
+.sidebar__close-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar__content {
+    width: 0;
+    height: 100%;
+    
+    padding: 3rem 2rem;
+    
+    background-color: @white;
+    
+    font-size: 1rem;
+    color: @black;
+    
+    @media @tablet {
+        padding: 1rem 2rem;
+    }
+    
+    @media @mobile {
+        padding: 1rem;
+    }
+}
+
+.sidebar__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 600;
+}
+
+.sidebar__insider {
+    width: 100%;
+    height: 95%;
+  
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.sidebar__social {
+    height: 5%;
+}
+
+.social__inner.side {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    bottom: 0;
+}
+
+.sidebar__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    padding: .5rem;
+    
+    &.sidebar__login {
+        width: 50%;
+        
+        display: none;
+        
+        @media @tablet-sm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 0 2rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.item__text {    
+    white-space: nowrap;
+    
+    &.wrap {
+        white-space: normal;
+    }
+}
+
+.item__img,
+.item__text {
+    padding: .4rem;
+}
+
+.item__img-logo {
+    width: 1.2rem;
+    height: 1.2rem;
+    
+    &.user {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+
+
+
+
+

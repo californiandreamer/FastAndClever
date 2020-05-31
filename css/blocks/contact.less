@@ -1,0 +1,171 @@
+// main: ../style.less
+
+.contact__content {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__inner {
+    width: 100%;
+    height: 100%;
+    
+    padding: 0 18rem;
+    
+    @media @tablet {
+        padding: 1rem;
+    }
+    
+    @media @mobile {
+        padding: 0 1rem;
+    }
+}
+
+.contact__main-title {
+    width: 100%;
+    
+    padding: 5rem;
+    
+    font-size: 3.75rem;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    
+    @media @tablet {
+        padding: 2rem;
+        
+        font-size: 2.5rem;
+    }
+}
+
+.contact__items {
+    display: flex;
+    justify-content: center;
+    
+    @media @mobile {
+        flex-wrap: wrap;
+    }
+}
+
+.contact__item {
+    width: 33.33333%;
+    min-width: 18rem;
+    
+    padding: 2rem;
+    
+    @media @tablet {
+        min-width: 12rem;
+        
+        padding: 1rem;
+    }
+    
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.contact__item-title {
+    font-size: 3.75rem;
+    
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+}
+
+.contact__item-text {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.contact__item-data {
+    font-size: 1.5rem;
+    font-weight: 200;
+    
+    &.mail {
+        font-size: 1rem;
+        
+        @media @tablet-sm {
+            font-size: .8rem;
+        }
+        
+        @media @mobile {
+            font-size: 1rem;
+        }
+    }
+}
+
+.contact__map {
+    width: 100%;
+   
+    position: relative;
+    
+    overflow: hidden;
+    
+    margin-bottom: 2rem;
+}
+
+.contact__map-img {
+    width: 100%;
+    height: 8rem;
+    
+    @media @tablet {
+        height: 6rem;
+    }
+    
+    @media @mobile {
+        height: 4rem;
+    }
+}
+
+.contact__map-content {
+    width: 100%;
+    height: 100%;
+    
+    padding: 1rem;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;   
+}
+
+.map__pin-img {
+    @media @mobile {
+        height: 1.5rem;
+    }
+}
+
+.contact__map-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @red;
+    
+    cursor: pointer;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    @media @mobile {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

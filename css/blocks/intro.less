@@ -1,0 +1,448 @@
+// main: ../style.less
+
+.intro {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    
+    position: relative;
+    
+    &:after {
+        content: "";
+        
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        
+        display: block;
+        
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+
+.video {
+    width: 100%;
+    
+    position: relative;  
+    top: 0;
+    left: 0;
+}
+
+.video__intro {
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+    overflow: hidden;
+    
+    @media @netbook {
+        width: auto;
+        height: 100vh;
+     }
+}
+
+.intro__content {
+    width: 100%;
+    
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    z-index: 3;
+    
+    text-align: center;
+    color: @white;
+    font-size: 3rem;
+    
+    &.index {
+        height: 84%;
+        
+        top: 0;
+        z-index: 3;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @media @mobile {
+            height: 100%;
+        }
+    }
+    
+    @media @desktop-large {
+        top: 16rem;
+    }
+    
+    @media @desktop {
+        top: 12rem;
+    }
+    
+    @media @laptop {
+        font-size: 2.5rem;
+    }
+    
+    @media @netbook {
+        font-size: 2rem;
+    }
+    
+    @media @tablet {
+        height: 5rem;
+        
+        top: 10rem;
+        
+        font-size: 1.7rem;
+    }
+    
+    @media @tablet-sm {
+        font-size: 1.5rem;
+    }
+    
+    @media @mobile {
+        //height: 20%;
+        
+        top: 7rem;
+        
+        font-size: 1.2rem;
+    }
+    
+    @media @mobile-sm {
+        //height: 100%;
+        
+        top: 6rem;
+        
+        font-size: 1rem;
+    }
+}
+
+.intro__title {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.intro__subtitle {
+    margin-left: 1.5rem;
+    
+    font-weight: 100;
+    
+    @media @netbook {
+        margin-left: 1rem;
+    }
+    
+    @media @mobile {
+        margin-left: .5rem;
+    }
+    
+    &.index {
+        letter-spacing: 3.8rem;
+        
+        @media @laptop {
+            letter-spacing: 3.3rem;
+        }
+        
+        @media @netbook {
+            letter-spacing: 2.7rem;
+        }
+        
+        @media @laptop {
+            letter-spacing: 2.3rem;
+        }
+        
+        @media @tablet {
+            letter-spacing: 2rem;
+        }
+        
+        @media @tablet-sm {
+            margin-left: 2rem;
+            letter-spacing: 1.5rem;
+        }
+        
+        @media @mobile-sm {
+            margin-left: 1rem;
+            letter-spacing: 1.2rem;
+        }
+    }
+}
+
+.slideblocks {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    left: 0;
+    bottom: 0;
+    
+    overflow: hidden;
+    
+    @media @tablet {
+        position: absolute;
+    }
+    
+    @media @mobile {
+        position: relative;
+    }
+}
+
+.slideblocks__inner {
+    width: 100%;
+    height: 30%;
+    min-height: 18rem;
+    
+    margin-bottom: 2rem;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    
+    display: flex;
+    justify-content: center;
+    
+    background-color: @white;
+    
+    @media @desktop {
+        height: 20%;
+    }
+    
+    @media @tablet{
+        height: 20rem;
+        min-height: 0;
+        
+        margin-bottom: 0;
+        
+        flex-wrap: wrap;
+    }
+    
+    @media @mobile {
+        height: 100%;
+        
+        padding-top: 4rem;
+        
+        overflow: hidden;
+    }
+}
+
+.slideblocks__item {
+    width: 16.6666666667%;
+    min-width: 10rem;
+    
+    position: relative;
+    
+    padding: 2.5rem 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    background-color: @white;
+    
+    text-align: center;
+    font-size: 1.5rem;
+    
+    cursor: pointer;
+    
+    @media @desktop {
+        padding: 1rem;
+    }
+    
+    @media @tablet{
+        width: 33.33333%;
+        height: 10rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    @media @mobile {
+        width: 50%;
+        height: 12rem;
+        
+        padding: 0;
+    }
+    
+    &:hover
+    .slideblock__back {
+        display: block;
+        
+        bottom: 0;
+        z-index: 10;
+    }    
+    
+    &:hover
+    .slideblock__back.top-left {
+        top: 0;
+    }
+    
+    &:hover
+    .slideblock__back.top-right {
+        top: 0;
+    }
+    
+    &:hover
+    .slideblock__back.middle-left {
+        left: 0;
+    }
+    
+    &:hover
+    .slideblock__back.middle-right {
+        right: 0;
+    }
+    
+    &:hover
+    .slideblock__back.bottom-left {
+        left: 0;
+    }
+    
+    &:hover
+    .slideblock__back.bottom-right {
+        bottom: 0;
+    }
+}
+
+.bottom__item {
+    position: relative;
+    z-index: 20;
+}
+
+.slideblock__img {
+    margin: 1rem;
+    
+    width: 6rem;
+    
+    @media @tablet {
+        width: 4rem;
+    }
+    
+    @media @mobile {
+        width: 5rem;
+    }
+}
+
+.slideblock__back {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    
+    padding: 1rem;
+    
+    position: absolute;
+    z-index: 10;
+    
+    transition: .3s ease;
+    
+    cursor: pointer;
+    
+    @media @mobile {
+        padding: .5rem;
+    }
+}
+
+.slideblock__back.top-left {
+    width: 100%;
+    height: 12rem;
+    
+    top: -60rem;
+}
+
+.slideblock__back.top-right {
+    width: 100%;
+    height: 12rem;
+    
+    top: -60rem;
+}
+
+.slideblock__back.middle-left {
+    width: 100%;
+    height: 12rem;
+    
+    left: -60rem;
+}
+
+.slideblock__back.middle-right {
+    width: 100%;
+    height: 12rem;
+    
+    right: -60rem;
+}
+
+.slideblock__back.bottom-left {
+    width: 100%;
+    height: 12rem;
+    
+    bottom: -60rem;
+}
+
+.slideblock__back.bottom-right {
+    width: 100%;
+    height: 12rem;
+    
+    bottom: -60rem;
+}
+
+.triangle {
+    width: 3rem;
+    height: 3rem;
+    
+    position: absolute;
+    top: -1.7rem;
+    left: 40%;
+    
+    background-color: @black;
+    
+    transform: rotateZ(45deg);
+}
+
+.back__title {
+    margin-top: 1rem;
+    
+    font-size: 1.25rem;
+    font-weight: 400;
+    
+    @media @tablet {
+        font-size: 1rem;
+    }
+    
+    @media @mobile {
+        margin-top: .5rem;
+    }
+}
+
+.back__text {
+    margin-top: .5rem;
+    
+    font-size: .875rem;
+    
+    @media @tablet {
+        font-size: .5rem;
+    }
+    
+    @media @mobile {
+        font-size: .7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
