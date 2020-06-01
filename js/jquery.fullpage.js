@@ -3,10 +3,6 @@
  */
 ;(function(global,$){
 	'use strict';
-    const image = document.querySelector(".phones__img")
-    var rect = image.getBoundingClientRect();
-    console.log(rect.top, rect.right, rect.bottom, rect.left);
-    console.log("img", image)
 	var Fullpage = (function(){
 		function Fullpage (el,options) {
 			this.$el = el;
@@ -36,8 +32,6 @@
 				}
 			}
 		};
-        
-        
 
 		Fullpage.prototype = {
 			constructor:Fullpage,
@@ -68,18 +62,14 @@
 					y0 = e.touches[0].clientY;
 				});
 
-				this.$el.on('touchmove',utils.throttle(function(e){
-					console.log('move', e.changedTouches[0])
+				this.$el.on('touchmove',utils.throttle(function(){
+					console.log('move')
 					var e = arguments[0];
 					if (!x0 || !y0) return;
 					xDiff = e.touches[0].clientX - x0;
 					yDiff = e.touches[0].clientY - y0;
-                    const touchPos = e.changedTouches[0]
-                    const isEventOnImage = touchPos.clientX > rect.left -100 && touchPos.clientX < rect.right + 100 && targetIndex == 2
-                    const isMobile = window.innerWidth <= 565
-                    if (isEventOnImage && isMobile) {return}
-                    targetIndex = that.currIndex + (yDiff>0?-1:1);
-                    console.table(targetIndex)
+
+					targetIndex = that.currIndex + (yDiff>0?-1:1);
 					that.gotoTarget(targetIndex);
 				},16));
 			},
@@ -114,5 +104,4 @@
 		});
 		return this;
 	};
-    
 })(this,this.jQuery);
