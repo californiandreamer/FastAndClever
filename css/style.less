@@ -35,7 +35,7 @@ a {
     color: @black;
 }
 
-a:hover {
+a:not(.shop):hover {
     transition: .2s linear;
     opacity: 70%;
 }
@@ -120,31 +120,6 @@ section {
     }
 }
 
-.bg_crimis {
-    background-color: #ec413d;
-}
-
-.bg_yellow {
-    background-color: #fef102;
-}
-
-.bg_turquoise {
-    background-color: #00aeaf;
-}
-
-.bg_green {
-    background-color: #74c046;
-}
-
-.bg_blue {
-    background-color: #5e8bc6;
-}
-
-.bg_orange {
-    background-color: #f7a619;
-}
-
-
 /*Keyframes*/
 @keyframes go-left-right { 
     from {
@@ -170,4 +145,5 @@ section {
 @import "blocks/team";
 @import "blocks/wedo";
 @import "blocks/vacancies";
+@import "blocks/partners";
 @import "blocks/footer";

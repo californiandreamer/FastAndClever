@@ -44,11 +44,6 @@
     
     background-color: @white;
     
-    @media @laptop {
-        display: flex;
-        justify-content: space-between;
-    }
-    
     @media @netbook {
         width: 40%;
     }
@@ -96,7 +91,7 @@
     min-width: 14rem;
     height: 100%;
     
-    padding: 1.7rem 1.5rem;
+    padding: 1.7rem 1rem;
     
     display: flex;
     flex-direction: column;
@@ -104,24 +99,6 @@
     text-align: center;
     
     @media @netbook {
-        display: none;
-    }
-}
-
-.cart {
-    width: 5.625rem;
-    height: 100%;
-    
-    padding: 2.25rem;
-    margin-right: 1rem;
-    
-    transition: .2s linear;
-    
-    &:hover {
-        opacity: 70%;
-    }
-    
-    @media @tablet-sm {
         display: none;
     }
 }
@@ -137,7 +114,7 @@
 }
 
 .header__right.index {
-    width: 15rem;
+    width: 5rem;
     height: 5.625rem;
     
     display: block;
@@ -150,7 +127,7 @@
     background-color: transparent;
     
     @media @tablet {
-        width: 50%;
+        //width: 50%;
         
         background-color: @white;
     }
@@ -166,27 +143,19 @@
     color: @black;
 }
 
-//.language.index,
-//.login__text.index,
-//.burger__btn.index {
-//    color: @white;
-//    
-//    @media @tablet {
-//        color: @black;
-//    }
-//}
-
 .header__right--inner {
-    width: 15rem;
+    width: 24rem;
     height: 100%;
     
     position: relative;
-    right: 3rem;
-    
-    float: right;
+    right: 5rem;
     
     @media @tablet-sm {
         width: 8.5rem;
+    }
+    
+    @media @mobile {
+        right: 3rem;
     }
 }
 
@@ -206,6 +175,11 @@
     &:hover
     .language__text {
         opacity: 70%;
+    }
+    
+    &.index {
+        position: relative;
+        right: 2rem;
     }
 }
 
@@ -247,6 +221,42 @@
     @media @tablet {
         color: @black;
     }
+}
+
+.shop {
+    height: 100%;
+    
+    padding: 2rem;
+    
+    transition: .2s linear;
+    
+    &:hover
+    .shop__btn {
+        background-color: @black;
+        color: @white;
+    }
+    
+    @media @tablet-sm {
+        display: none;
+    }
+}
+
+.shop__btn {
+    width: 100%;
+    height: 100%;
+    
+    padding: .5rem 1rem;
+    
+    background-color: @white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    white-space: nowrap;
+    color: @black;
+    
+    border: .14rem solid @black;
+    border-radius: 1rem;
+    
+    transition: .2s linear;
 }
 
 .burger {
