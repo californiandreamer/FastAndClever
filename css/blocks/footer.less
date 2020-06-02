@@ -10,25 +10,25 @@
     font-size: 1.2rem;
     color: @white;
     
-//    @media @tablet {
-//        display: none;
-//    }
-    
     &.index {
-        position: relative;
-        bottom: 10rem;    
-    
-        display: flex;
-        justify-content: flex-end;
-    
-        @media @mobile {
-            display: none;
-        }
+        bottom: 0;
     }
 }
 
 .footer.absolute {
     position: absolute;
+}
+
+.footer__left {
+    width: 100%;
+    
+    position: absolute;
+    left: 1rem;
+    bottom: 10rem;
+    
+    @media @mobile {
+        bottom: 7rem;
+    }
 }
 
 .footer__inner {
@@ -65,7 +65,9 @@
 }
 
 .social__links {
-    display: none;
+    @media @mobile {
+        display: none;        
+    }
 }
 
 .social__inner {
