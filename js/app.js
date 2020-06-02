@@ -56,8 +56,6 @@ $(document).ready(function () {
         console.log('Browser has other language');
     }
     }
-    
-    //document.getElementsByTagName("html")[0].style.visibility = "visible";
         
     langBtn.on('click', function(event) {
         event.preventDefault();
@@ -192,13 +190,6 @@ $(document).ready(function () {
     });
     
 });
-
-const phoneImages = document.querySelectorAll(".phones__img")
-
-//phoneImages.forEach((img) => {
-//    console.log(img)
-//    img.addEventListener("touchmove", () => {})
-//})
 
 
 
