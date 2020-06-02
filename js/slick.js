@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('.phones').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     autoplay: true,
@@ -12,7 +12,7 @@ $(document).ready(function () {
     
     $('.desktops').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     autoplay: true,
