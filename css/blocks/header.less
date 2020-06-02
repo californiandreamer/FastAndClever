@@ -18,6 +18,13 @@
     &.fixed {
         position: fixed;
     }
+    
+    &.tablet__fixed {
+        @media @tablet {
+            display: block;
+            position: fixed;
+        }
+    }
 }
 
 .header.index {
@@ -150,6 +157,9 @@
     position: relative;
     right: 5rem;
     
+    display: flex;
+    justify-content: space-between;
+    
     @media @tablet-sm {
         width: 8.5rem;
     }
@@ -243,6 +253,7 @@
 
 .shop__btn {
     width: 100%;
+    min-width: 17.375rem;
     height: 100%;
     
     padding: .5rem 1rem;

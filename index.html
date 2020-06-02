@@ -13,8 +13,9 @@
     <link rel="icon" type="image/png" href="images/FnC.ico">
     <title>Fast&Clever</title>
 </head>
-<body> 
-   
+
+<body>
+ 
 <div id="fullpage">
  
   <section class="section intro">
@@ -23,7 +24,7 @@
         <video class="video__intro" src="video/video.mp4" autoplay muted loop></video>
       </div><!-- ./video -->
      
-        <header class="header">
+        <header class="header mobile_none">
           <div class="header__inner">
             <div class="header__left">
              <a href="#" class="logo">
@@ -168,7 +169,7 @@
   <section class="section mobile">
       <div class="slideblocks">
       
-      <header class="header">
+      <header class="header mobile_none">
           <div class="header__inner">
             <div class="header__left">
              <a href="#" class="logo">
@@ -304,7 +305,7 @@
   </section>
  
   <section class="section first">
-     <header class="header index">
+     <header class="header index mobile_none">
          <div class="header__inner">
             <div class="header__left">
              <a href="#" class="logo">
@@ -406,7 +407,7 @@
   </section>
   
   <section class="section second">
-      <header class="header index">
+      <header class="header index mobile_none">
          <div class="header__inner">
             <div class="header__left">
              <a href="#" class="logo">
@@ -506,7 +507,7 @@
   </section>
   
   <section class="section third">
-      <header class="header index">
+      <header class="header index mobile_none">
          <div class="header__inner">
             <div class="header__left">
              <a href="#" class="logo">
@@ -590,6 +591,11 @@
     
     <!-- Footer -->
     <footer class="footer index">
+        <div class="footer__left">
+            <div class="footer__roots-text index" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
+            <div class="footer__roots-text index" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
+        </div>
+        
        <div class="footer__right index">
          <div class="social__links">
             <div class="social__inner">
@@ -613,8 +619,8 @@
 
 </div> <!-- ./fullpage -->
 
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
       <div class="sidebar__inner">
        <div class="sidebar__freespace mask black blur"></div>
        
@@ -706,6 +712,39 @@
        </div>
        </div> <!-- ./sidebar__inner -->
    </div> <!-- ./sidebar -->
+    
+    <header class="header none tablet__fixed">
+          <div class="header__inner">
+            <div class="header__left">
+             <a href="#" class="logo">
+                 <img src="images/F&C_short.png" alt="" class="logo__img">
+             </a>
+             <a href="contact.html" class="contact">
+                 <span class="telephone">+38 (067) 990 50 90</span>
+                 <span class="mail">support@fastandclever.com</span>
+             </a>
+             </div>
+             
+             <div class="header__right">
+               <div class="header__right--inner">
+                
+                 <a href="https://store.fastandclever.com/" class="shop">
+                     <span class="shop__btn" lang="en">Visit our Store</span>
+                     <span class="shop__btn" lang="uk">Відвідати магазин</span>
+                 </a>
+                 <button class="language" type="button" data-lang>
+                     <span class="language__text" data-en>EN</span>
+                     <span class="language__text" data-uk>UA</span>
+                 </button>
+               
+               </div>
+                <button class="burger" type="button">
+                    <div class="burger__btn"></div>
+                </button>
+            </div> <!-- ./header__right -->
+         </div> <!-- ./header__inner -->
+     </header>
+     
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
