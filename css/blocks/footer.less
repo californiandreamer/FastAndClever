@@ -11,22 +11,23 @@
     color: @white;
     
     &.index {
-        bottom: 0;
+        bottom: 10.4rem;
+        
+        @media @mobile {
+            bottom: 8rem;
+        }
+    }
+    
+    &.absolute {
+        position: absolute;
     }
 }
 
-.footer.absolute {
-    position: absolute;
-}
-
 .footer__left {
-    width: 100%;
-    
-    position: absolute;
-    left: 1rem;
-    bottom: 10rem;
     
     @media @mobile {
+        width: 100%;
+        
         bottom: 7rem;
     }
 }
@@ -62,6 +63,10 @@
     @media @tablet-sm {
         font-size: .8rem;
     }
+    
+    @media @mobile-sm {
+        font-size: .7rem;
+    }
 }
 
 .social__links {
@@ -88,6 +93,7 @@
 }
 
 .social__img {
+    
     &.side {
         width: 1.5rem;
         height: 1.5rem;
