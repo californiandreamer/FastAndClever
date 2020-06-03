@@ -21,7 +21,7 @@
         
         display: block;
         
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .1);
     }
 }
 
@@ -59,7 +59,7 @@
     
     text-align: center;
     color: @white;
-    font-size: 3rem;
+    font-size: 2.3rem;
     
     &.index {
         height: 84%;
@@ -70,6 +70,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
+        font-size: 3rem;
         
         @media @mobile {
             height: 100%;
@@ -124,6 +126,22 @@
 .intro__title {
     font-size: 3em;
     font-weight: 400;
+    
+    @media @netbook {
+        font-size: 2.5em;
+    }
+    
+    @media @tablet-sm {
+        font-size: 2em;
+    }
+    
+    @media @mobile {
+        font-size: 1.3em;
+    }
+    
+    @media @mobile-sm {
+        font-size: 1em;
+    }
 }
 
 .intro__subtitle {
@@ -160,12 +178,22 @@
         
         @media @tablet-sm {
             margin-left: 2rem;
-            letter-spacing: 1.5rem;
+            
+            font-size: 3rem;
+            letter-spacing: 2.5rem;
+        }
+        
+        @media @mobile {
+            
+            font-size: 1.5rem;
+            letter-spacing: 1.8rem;
         }
         
         @media @mobile-sm {
             margin-left: 1rem;
-            letter-spacing: 1.2rem;
+            
+            font-size: 1.2rem;
+            letter-spacing: 1.4rem;
         }
     }
 }
