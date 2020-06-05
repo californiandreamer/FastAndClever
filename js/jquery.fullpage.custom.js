@@ -55,7 +55,6 @@
 					delta = e.wheelDelta?e.wheelDelta:-e.detail;
 					targetIndex = that.currIndex + (delta>0?-1:1);
 					that.gotoTarget(targetIndex);
-                    console.log(targetIndex);
 				},100));
 
 				this.$el.on('touchstart',function(e){     
