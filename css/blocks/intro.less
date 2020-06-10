@@ -72,9 +72,15 @@
         justify-content: center;
         
         font-size: 3rem;
+
+        @media @tablet {
+            top: -3rem;
+        }
         
         @media @mobile {
             height: 100%;
+            
+            top: 0;
         }
     }
     
@@ -155,6 +161,8 @@
     
     @media @mobile {
         margin-left: .5rem;
+        
+        font-size: .8rem;
     }
     
     &.index {

@@ -39,15 +39,15 @@
     z-index: 0;
 }
 
-.intro__content.cooperation {
-    height: 100%;
-    
-    top: 0;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+//.intro__content.cooperation {
+//    height: 100%;
+//    
+//    top: -6rem;
+//    
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//}
 
 .cooperation__content {
     width: 100%;
@@ -198,7 +198,15 @@
 }
 
 .cooperation__login-btn {
-    background-color: @golden-light;
+    background-color: transparent;
+    border: .125rem solid @black;
+    
+    color: @black;
+    
+    &:hover {
+        background-color: @black;
+        color: @white;
+    }
 }
 
 
