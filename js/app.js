@@ -4,9 +4,16 @@ $(document).ready(function () {
     const langBtn = $("[data-lang]");
     const langEn = $("[data-en]");
     const langUk = $("[data-uk]");
+    const headerContent = $(".header__inner");
+    const htmlDoc = $("html");
     let userLang = navigator.language || navigator.userLanguage; 
     let selectedLang = localStorage.getItem("lang");
     let setLang = selectedLang;
+    
+    setTimeout (function() {
+        headerContent.addClass('active');
+        htmlDoc.css('visibility', 'visible');
+    }, 0);
     
     console.log(setLang);
     
