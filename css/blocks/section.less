@@ -1,5 +1,9 @@
 // main: ../style.less
 
+.section {
+    background-color: @white;
+}
+
 .section.first {
     background: linear-gradient(rgba(255,149,149,1) 0%, rgba(70,23,23,1) 100%);
 }
@@ -208,6 +212,10 @@
     }
 }
 
+.slick-slide {
+    outline: none
+}
+
 .phones__img {
     width: 100%;
     max-height: 60rem;
@@ -264,9 +272,9 @@
     }
     
     @media @mobile {
-        height: 25rem;
+        height: 20rem;
         
-        margin-top: 7rem;
+        margin-top: 5rem;
     }
     
     @media @mobile-sm {

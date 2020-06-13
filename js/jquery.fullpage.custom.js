@@ -66,7 +66,6 @@
                     $('.slick__area').bind('touchmove', false);
                     $('.slick__area-desktop').bind('touchmove', false);
                     $('.rechtackle').bind('touchmove', false);
-					console.log('move')
 					var e = arguments[0];
 					if (!x0 || !y0) return;
 					xDiff = e.touches[0].clientX - x0;
@@ -80,12 +79,14 @@
 				var children = this.$el.children();
 				var that = this;
 				var translateY;
-
+                const documentHtml = $("html");
+                const documentBody = $("body");
+                
                 if(window.innerWidth >= 565) {
 				    if(this.animating || targetIndex<0 || targetIndex>3) return;
                 } else {
                     if(this.animating || targetIndex<0 || targetIndex>4) return;
-                } 
+                }
 
 				translateY= 'translateY(-'+targetIndex*100+'%)';
 				this.animating = true;
@@ -112,3 +113,4 @@
 		return this;
 	};
 })(this,this.jQuery);
+

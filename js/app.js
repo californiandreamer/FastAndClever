@@ -15,8 +15,6 @@ $(document).ready(function () {
         htmlDoc.css('visibility', 'visible');
     }, 0);
     
-    console.log(setLang);
-    
     if (setLang == "en" || setLang == "uk") {
         
         if (setLang == "uk") {
@@ -52,7 +50,6 @@ $(document).ready(function () {
         langUk.removeClass('none');
         langEn.addClass('none');
         
-        console.log('Browser has ukrainian language');
     } else {
         $(document.body).addClass('en');
         $(document.body).removeClass('uk');
@@ -60,7 +57,6 @@ $(document).ready(function () {
         langEn.removeClass('none');
         langUk.addClass('none');
         
-        console.log('Browser has other language');
     }
     }
         
@@ -196,6 +192,58 @@ $(document).ready(function () {
         }   
     });
     
+// Link delayers
+    const hoverItem = ('.delayer');
+    const hoverLink = ('.hover__link');
+    
+    $(hoverItem).on({
+        mouseenter: function () {
+            setTimeout(function() {
+                $(hoverLink).css("visibility", "visible");
+            }, 2000)    
+            console.log('hover')
+        },
+        mouseleave: function () {
+            $(hoverLink).css("visibility", "hidden");    
+            console.log('leave hover')
+        }    
+    });
+    
+// Main page reload
+    const logoBtn = $(".logo.reloader");
+    
+    $(logoBtn).on('click', function(event) {
+        event.preventDefault();
+        
+        location.reload();
+    });
+    
+// Laptop slides hidder
+    const rechtAll = $('.rechtackle');
+    let isIos = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
+    
+    if(isIos) {  
+        
+    } else {
+        $(rechtAll).addClass('focus');
+    } 
+    
+// IOS hover fixing
+//    let itemTeam = $('.team__item');
+//    let positionWindow = $(positionWindow).scrollTop();
+//
+//    $(document).click(function() {
+//        console.log(positionWindow);
+//    });
+//    
+//    if(isIos) {
+//        $(itemTeam).on('click', function() {
+//            $(this).toggle();
+//        })
+//    } else {
+//        
+//    }
+
 });
 
 
