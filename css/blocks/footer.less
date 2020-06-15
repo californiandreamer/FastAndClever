@@ -32,6 +32,14 @@
         
         display: block;    
     }
+    
+    &.infooter {
+        display: block;
+        
+        @media @tablet {
+            display: none;
+        }
+    }
 }
 
 .footer__inner {
@@ -67,7 +75,7 @@
     }
     
     @media @mobile-sm {
-        font-size: .7rem;
+        font-size: .75rem;
     }
 }
 
