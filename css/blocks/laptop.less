@@ -63,10 +63,100 @@
         left: -7rem;
     }
     
-    &:focus {
+    &.active {
         width: 100%;
-        min-width: 56.6rem; //width: 40rem;
-        height: 100%; //height: 30rem;
+        min-width: 56.6rem; 
+        height: 100%;
+        
+        
+        outline: none;
+        
+        overflow-y: scroll;
+        
+        position: absolute;
+        top: 0;
+        left: -150%;
+        z-index: 500;
+        transform: none;
+        
+        background-color: fade(#000, 96%);
+        
+        @media @desktop {
+            top: -5%;
+            left: -150%;
+            
+            &.two {
+                left: -150%;
+            }
+    
+            &.three {
+                left: -150%;
+            }
+        }
+        
+        @media @netbook {
+            left: -110%;
+            
+            &.two {
+                left: -110%;
+            }
+    
+            &.three {
+                left: -110%;
+            }
+        }
+        
+        @media @tablet {
+            top: -5%;
+            left: -25%;
+            
+            width: 50%;
+            min-width: 40rem;
+            
+            &.two {
+                left: -25%;
+            }
+    
+            &.three {
+                left: -25%;
+            }
+        }
+        
+        @media @tablet-sm {
+            left: -30%;
+            
+            min-width: 30rem;
+            min-height: 25rem;
+            
+            &.two {
+                left: -30%;
+            }
+    
+            &.three {
+                left: -30%;
+            }
+        }
+        
+        @media @mobile {
+            left: -10%;
+            
+            min-width: 22rem;
+            min-height: 21rem;
+            
+            &.two {
+                left: -10%;
+            }
+    
+            &.three {
+                left: -10%;
+            }
+        }
+    }
+    
+        &.focus:focus {
+        width: 100%;
+        min-width: 56.6rem; 
+        height: 100%;
         
         
         outline: none;
@@ -190,11 +280,5 @@
 .rechtackle__img {
     width: 100%;
 }
-
-
-
-
-
-
 
 

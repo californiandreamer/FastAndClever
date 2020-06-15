@@ -14,7 +14,7 @@
         bottom: 10.4rem;
         
         @media @mobile {
-            bottom: 8rem;
+            bottom: 0;
         }
     }
     
@@ -24,11 +24,21 @@
 }
 
 .footer__left {
+    width: 100%;
+    display: none;
     
-    @media @mobile {
-        width: 100%;
+    @media @tablet {
+        margin-top: 2rem;
         
-        bottom: 7rem;
+        display: block;    
+    }
+    
+    &.infooter {
+        display: block;
+        
+        @media @tablet {
+            display: none;
+        }
     }
 }
 
@@ -65,7 +75,7 @@
     }
     
     @media @mobile-sm {
-        font-size: .7rem;
+        font-size: .75rem;
     }
 }
 
