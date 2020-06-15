@@ -362,6 +362,10 @@
     
     color: @white;
     
+    @media @tablet {
+        padding: 0;
+    }
+    
     @media @mobile {
         padding: .5rem;
     }
@@ -415,6 +419,10 @@
     background-color: @black;
     
     transform: rotateZ(45deg);
+    
+    @media @tablet {
+        display: none;
+    }
 }
 
 .back__title {
@@ -438,7 +446,9 @@
     font-size: .875rem;
     
     @media @tablet {
-        font-size: .5rem;
+        
+        margin-top: 0;
+        font-size: .75rem;
     }
     
     @media @mobile {
