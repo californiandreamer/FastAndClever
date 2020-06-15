@@ -1,798 +1,808 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <title>Our works</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169213210-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169213210-1'); 
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>Our works</title>
 </head>
 <body>
-    <header class="header fixed">
-          <div class="header__inner">
-            <div class="header__left">
-             <a href="index.html" class="logo">
-                 <img src="images/F&C_short.png" alt="" class="logo__img">
-             </a>
-             <a href="contact.html" class="contact">
-                 <span class="telephone">+38 (067) 990 50 90</span>
-                 <span class="mail">support@fastandclever.com</span>
-             </a>
-             </div>
-             
-             <div class="header__right">
-               <div class="header__right--inner">
-                
-                 <a href="https://store.fastandclever.com/" class="shop">
-                     <span class="shop__btn" lang="en">Visit our Store</span>
-                     <span class="shop__btn" lang="uk">Відвідати магазин</span>
-                 </a>
-                 <button class="language" type="button" data-lang>
-                     <span class="language__text" data-en>EN</span>
-                     <span class="language__text" data-uk>UA</span>
-                 </button>
-               
-               </div>
-                <button class="burger" type="button">
-                    <div class="burger__btn"></div>
-                </button>
-            </div> <!-- ./header__right -->
-         </div> <!-- ./header__inner -->
-     </header>
-     
-    <div class="our__works">
-        <div class="video-works">
-            <video class="video__intro-works" src="video/intro_video.mp4" autoplay muted loop></video>
-            
-            <div class="intro__content">
-                <h1 class="intro__title" lang="en">Our works</h1>
-                <h1 class="intro__title" lang="uk">Портфоліо</h1>
-                <h2 class="intro__subtitle" lang="en">Check out our portfolio!</h2> 
-                <h2 class="intro__subtitle" lang="uk">Оцініть наші роботи!</h2> 
+<header class="header fixed">
+  <div class="header__inner">
+    <div class="header__left">
+      <a href="index.html" class="logo">
+        <img src="images/F&C_short.png" alt="" class="logo__img">
+      </a>
+      <a href="contact.html" class="contact">
+        <span class="telephone">+38 (067) 990 50 90</span>
+        <span class="mail">support@fastandclever.com</span>
+      </a>
+    </div>
+
+    <div class="header__right">
+      <div class="header__right--inner">
+
+        <a href="https://store.fastandclever.com/" class="shop">
+          <span class="shop__btn" lang="en">Visit our Store</span>
+          <span class="shop__btn" lang="uk">Відвідати магазин</span>
+        </a>
+        <button class="language" type="button" data-lang>
+          <span class="language__text" data-en>EN</span>
+          <span class="language__text" data-uk>UA</span>
+        </button>
+
+      </div>
+      <button class="burger" type="button">
+        <div class="burger__btn"></div>
+      </button>
+    </div> <!-- ./header__right -->
+  </div> <!-- ./header__inner -->
+</header>
+
+<div class="our__works">
+  <div class="video-works">
+    <video class="video__intro-works" src="video/intro_video.mp4" autoplay muted loop></video>
+
+    <div class="intro__content">
+      <h1 class="intro__title" lang="en">Our works</h1>
+      <h1 class="intro__title" lang="uk">Портфоліо</h1>
+      <h2 class="intro__subtitle" lang="en">Check out our portfolio!</h2>
+      <h2 class="intro__subtitle" lang="uk">Оцініть наші роботи!</h2>
+    </div>
+  </div><!-- ./video -->
+
+
+
+  <div class="portfolio__outer">
+    <div class="works__nav">
+      <a class="works__nav-link" href="#" lang="en" data-filter="all">All</a>
+      <a class="works__nav-link" href="#" lang="uk" data-filter="all">Всі</a>
+      <a class="works__nav-link" href="#" lang="en" data-filter="app">Apps</a>
+      <a class="works__nav-link" href="#" lang="uk" data-filter="app">Додатки</a>
+      <a class="works__nav-link" href="#" lang="en" data-filter="website">Websites</a>
+      <a class="works__nav-link" href="#" lang="uk" data-filter="website">Веб-сайти</a>
+      <a class="works__nav-link" href="#" lang="en" data-filter="crm">CRM-systems</a>
+      <a class="works__nav-link" href="#" lang="uk" data-filter="crm">CRM-системи</a>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+
+      <div class="portfolio__col" data-cat="app">
+        <div class="work" data-modal="#modal_project_taxi">
+          <img class="work__image" src="images/phone_taxi.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Taxi pilot app</div>
+            <div class="work__title" lang="uk">Додаток Таксі Пілот</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="portfolio__col" data-cat="app">
+        <div class="work" data-modal="#modal_project_graef">
+          <img class="work__image" src="images/phone_market.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Graef gruppe app</div>
+            <div class="work__title" lang="uk">Додаток Graef gruppe</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_underwear">
+          <img class="work__image" src="images/mac_panties.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Underwear shop</div>
+            <div class="work__title" lang="uk">Магазин білизни</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="app">
+        <div class="work" data-modal="#modal_project_polonia">
+          <img class="work__image" src="images/phone_polonia.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Polonia app</div>
+            <div class="work__title" lang="uk">Додаток Полонія</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_airport">
+          <img class="work__image" src="images/mac_aeroport.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Ternopil Airport web-site</div>
+            <div class="work__title" lang="uk">Веб-сайт аеропорту</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="crm">
+        <div class="work" data-modal="#modal_project_sockets">
+          <img class="work__image" src="images/macbook_crm3.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">CRM-system for sockets factory</div>
+            <div class="work__title" lang="uk">CRM-система для виробництва шкарпеток</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_travels">
+          <img class="work__image" src="images/mac_travel.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Pathways Travels web-site</div>
+            <div class="work__title" lang="uk">Веб-сайт Pathways Travels</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="crm">
+        <div class="work" data-modal="#modal_project_beer">
+          <img class="work__image" src="images/macbook_crm1.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">CRM-system for beer factory</div>
+            <div class="work__title" lang="uk">CRM-система для виробництва пива</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_jacht">
+          <img class="work__image" src="images/mac_jacht.png" alt="">
+          <div class="work__mask">
+            <div class="work__title" lang="en">Boat Corporation web-site</div>
+            <div class="work__title" lang="uk">Веб-сайт Boat Corporation</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /.portfolio -->
+  </div> <!-- ./portfolio__outer -->
+
+</div>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__roots-text" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
+    <div class="footer__roots-text" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
+
+    <div class="social__links">
+      <div class="social__inner">
+        <a href="#" class="social__item">
+          <img src="images/telegram_icon.svg" alt="" class="social__img">
+        </a>
+        <a href="#" class="social__item">
+          <img src="images/instagram_icon.svg" alt="" class="social__img">
+        </a>
+        <a href="#" class="social__item">
+          <img src="images/twitter_icon.svg" alt="" class="social__img">
+        </a>
+        <a href="#" class="social__item">
+          <img src="images/facebook_icon.svg" alt="" class="social__img">
+        </a>
+      </div> <!-- ./social__inner -->
+    </div> <!-- ./social__links -->
+  </div> <!-- ./footer__inner -->
+</footer>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar__inner">
+    <div class="sidebar__freespace mask black blur"></div>
+
+    <button class="sidebar__close" type="button">
+      <img src="images/close_icon.svg" alt="" class="sidebar__close-img">
+    </button>
+
+    <div class="sidebar__content">
+      <div class="sidebar__insider">
+        <div class="sidebar__items">
+          <!--
+                             <a href="login.html" class="sidebar__item sidebar__login">
+                                 <div class="item__img">
+                                     <img src="images/user.svg" alt="" class="item__img-logo user">
+                                 </div>
+                                 <div class="item__text" lang="en">Log In</div>
+                                 <div class="item__text" lang="uk">Увійти</div>
+                             </a>
+          -->
+          <a href="works.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/work_icon.svg" alt="" class="item__img-logo">
             </div>
-        </div><!-- ./video -->
-        
-          
-        
-        <div class="portfolio__outer">
-             <div class="works__nav">
-               <a class="works__nav-link" href="#" lang="en" data-filter="all">All</a>
-               <a class="works__nav-link" href="#" lang="uk" data-filter="all">Всі</a>
-               <a class="works__nav-link" href="#" lang="en" data-filter="app">Apps</a>
-               <a class="works__nav-link" href="#" lang="uk" data-filter="app">Додатки</a>
-               <a class="works__nav-link" href="#" lang="en" data-filter="website">Websites</a>
-               <a class="works__nav-link" href="#" lang="uk" data-filter="website">Веб-сайти</a>
-               <a class="works__nav-link" href="#" lang="en" data-filter="crm">CRM-systems</a>
-               <a class="works__nav-link" href="#" lang="uk" data-filter="crm">CRM-системи</a>
-             </div>
-            
-        <div class="portfolio" id="portfolio">
-              
-               <div class="portfolio__col" data-cat="app">
-                   <div class="work" data-modal="#modal_project_taxi">
-                       <img class="work__image" src="images/phone_taxi.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Taxi pilot app</div>
-                           <div class="work__title" lang="uk">Додаток Таксі Пілот</div>
-                       </div>
-                   </div>
-               </div>
-               
-                
-               <div class="portfolio__col" data-cat="app">
-                   <div class="work" data-modal="#modal_project_graef">
-                       <img class="work__image" src="images/phone_market.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Graef gruppe app</div>
-                           <div class="work__title" lang="uk">Додаток Graef gruppe</div>
-                       </div>
-                   </div>
-               </div>
-               
-               <div class="portfolio__col" data-cat="website">
-                   <div class="work" data-modal="#modal_project_underwear">
-                       <img class="work__image" src="images/mac_panties.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Underwear shop</div>
-                           <div class="work__title" lang="uk">Магазин білизни</div>
-                       </div>
-                   </div>
-               </div>
-               
-               <div class="portfolio__col" data-cat="app">
-                   <div class="work" data-modal="#modal_project_polonia">
-                       <img class="work__image" src="images/phone_polonia.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Polonia app</div>
-                           <div class="work__title" lang="uk">Додаток Полонія</div>
-                       </div>
-                   </div>
-               </div>
-               
-               <div class="portfolio__col" data-cat="website">
-                   <div class="work" data-modal="#modal_project_airport">
-                       <img class="work__image" src="images/mac_aeroport.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Ternopil Airport web-site</div>
-                           <div class="work__title" lang="uk">Веб-сайт аеропорту</div>
-                       </div>
-                   </div>
-               </div>
-               
-               <div class="portfolio__col" data-cat="crm">
-                   <div class="work" data-modal="#modal_project_sockets">
-                       <img class="work__image" src="images/macbook_crm3.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">CRM-system for sockets factory</div>
-                           <div class="work__title" lang="uk">CRM-система для виробництва шкарпеток</div>
-                       </div>
-                   </div>
-               </div> 
-               
-               <div class="portfolio__col" data-cat="website">
-                   <div class="work" data-modal="#modal_project_travels">
-                       <img class="work__image" src="images/mac_travel.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Pathways Travels web-site</div>
-                           <div class="work__title" lang="uk">Веб-сайт Pathways Travels</div>
-                       </div>
-                   </div>
-               </div> 
-               
-               <div class="portfolio__col" data-cat="crm">
-                   <div class="work" data-modal="#modal_project_beer">
-                       <img class="work__image" src="images/macbook_crm1.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">CRM-system for beer factory</div>
-                           <div class="work__title" lang="uk">CRM-система для виробництва пива</div>
-                       </div>
-                   </div>
-               </div> 
-               
-               <div class="portfolio__col" data-cat="website">
-                   <div class="work" data-modal="#modal_project_jacht">
-                       <img class="work__image" src="images/mac_jacht.png" alt="">
-                       <div class="work__mask">
-                           <div class="work__title" lang="en">Boat Corporation web-site</div>
-                           <div class="work__title" lang="uk">Веб-сайт Boat Corporation</div>
-                       </div>
-                   </div>
-               </div>
-               
-           </div> <!-- /.portfolio -->
-        </div> <!-- ./portfolio__outer -->
-             
-     </div>
-    
-    <footer class="footer">
-      <div class="footer__inner">
-          <div class="footer__roots-text" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
-          <div class="footer__roots-text" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
-      
-         <div class="social__links">
-            <div class="social__inner">
-                <a href="#" class="social__item">
-                    <img src="images/telegram_icon.svg" alt="" class="social__img">
-                </a>
-                 <a href="#" class="social__item">
-                    <img src="images/instagram_icon.svg" alt="" class="social__img">
-                </a>
-                 <a href="#" class="social__item">
-                    <img src="images/twitter_icon.svg" alt="" class="social__img">
-                </a>
-                 <a href="#" class="social__item">
-                    <img src="images/facebook_icon.svg" alt="" class="social__img">
-                </a>
-            </div> <!-- ./social__inner -->
-        </div> <!-- ./social__links -->
-      </div> <!-- ./footer__inner -->
-    </footer>
-    
-    <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-      <div class="sidebar__inner">
-       <div class="sidebar__freespace mask black blur"></div>
-       
-       <button class="sidebar__close" type="button">
-           <img src="images/close_icon.svg" alt="" class="sidebar__close-img">
-       </button>
-       
-       <div class="sidebar__content">
-           <div class="sidebar__insider">
-               <div class="sidebar__items">
-<!--
-                   <a href="login.html" class="sidebar__item sidebar__login">
-                       <div class="item__img">
-                           <img src="images/user.svg" alt="" class="item__img-logo user">
-                       </div>
-                       <div class="item__text" lang="en">Log In</div>
-                       <div class="item__text" lang="uk">Увійти</div>
-                   </a>
--->
-                   <a href="works.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/work_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Our works</div>
-                       <div class="item__text" lang="uk">Наші роботи</div>
-                   </a>
-                   <a href="wedo.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/computer_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">What we do</div>
-                       <div class="item__text" lang="uk">Що ми робимо</div>
-                   </a>
-                   <a href="https://store.fastandclever.com/" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/cart_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Visit Store</div>
-                       <div class="item__text" lang="uk">Відвідати магазин</div>
-                   </a>
-                   <a href="team.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/team.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Our team</div>
-                       <div class="item__text" lang="uk">Наша команда</div>
-                   </a>
-                   <a href="partners.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/handshake.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text wrap" lang="en">Our partners</div>
-                       <div class="item__text wrap" lang="uk">Наші партнери</div>
-                   </a>
-                   <a href="vacancies.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/person_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Vacancies</div>
-                       <div class="item__text" lang="uk">Вакансії</div>
-                   </a>
-                   <a href="contact.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/smartphone_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Contact</div>
-                       <div class="item__text" lang="uk">Контакти</div>
-                   </a>
-               </div>
-               
-           </div> <!-- ./sidebar__insider -->
-              
-               <div class="sidebar__social">
-                    <div class="social__inner side">
-                        <a href="#" class="social__item side">
-                            <img src="images/telegram_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                        <a href="#" class="social__item side">
-                            <img src="images/instagram_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                        <a href="#" class="social__item side">
-                            <img src="images/twitter_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                        <a href="#" class="social__item side">
-                            <img src="images/facebook_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                    </div>
-               </div>
-       </div>
-       </div> <!-- ./sidebar__inner -->
-   </div> <!-- ./sidebar -->
+            <div class="item__text" lang="en">Our works</div>
+            <div class="item__text" lang="uk">Наші роботи</div>
+          </a>
+          <a href="wedo.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/computer_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">What we do</div>
+            <div class="item__text" lang="uk">Що ми робимо</div>
+          </a>
+          <a href="https://store.fastandclever.com/" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/cart_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Visit Store</div>
+            <div class="item__text" lang="uk">Відвідати магазин</div>
+          </a>
+          <a href="team.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/team.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Our team</div>
+            <div class="item__text" lang="uk">Наша команда</div>
+          </a>
+          <a href="partners.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/handshake.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text wrap" lang="en">Our partners</div>
+            <div class="item__text wrap" lang="uk">Наші партнери</div>
+          </a>
+          <a href="vacancies.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/person_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Vacancies</div>
+            <div class="item__text" lang="uk">Вакансії</div>
+          </a>
+          <a href="contact.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/smartphone_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Contact</div>
+            <div class="item__text" lang="uk">Контакти</div>
+          </a>
+        </div>
 
-  <!--Modal Taxi-->
-  <div class="modal modal--other" id="modal_project_taxi">
-      <div class="modal__dialog">
+      </div> <!-- ./sidebar__insider -->
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                 <div class="phone modal-phone">
-                     <div class="phone__body modal-phone">
-                         <video class="modal-phone__video" src="video/use_pilot.mp4" autoplay muted loop></video>
-                     </div>
-                 </div> <!-- ./phone -->
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Taxi Pilot</h3>
-                     <h3 class="modal-work__title" lang="uk">Таксі Пілот</h3>
-                     <div class="modal-work__info" lang="en">
-                         App <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Додаток <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company" lang="en">Taxi Pilot</div>
-                    <div class="modal-work__client-company" lang="uk">Таксі пілот</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">React Native, PHP</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="#" class="modal-work__link">
-                        <img src="images/google-play_icon.svg" alt="" class="modal-link__icon">
-                        <span lang="en">View on PlayMarket</span>
-                        <span lang="uk">Дивитися у PlayMarket</span>
-                    </a>
-                    <a href="#" class="modal-work__link">
-                        <img src="images/app-store_icon.svg" alt="" class="modal-link__icon">
-                        <span lang="en">View on AppStore</span>
-                        <span lang="uk">Дивитися у AppStore</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!--Modal Polonia-->
-  <div class="modal modal--other" id="modal_project_polonia">
-      <div class="modal__dialog">
+      <div class="sidebar__social">
+        <div class="social__inner side">
+          <a href="#" class="social__item side">
+            <img src="images/telegram_icon_black.svg" alt="" class="social__img side">
+          </a>
+          <a href="#" class="social__item side">
+            <img src="images/instagram_icon_black.svg" alt="" class="social__img side">
+          </a>
+          <a href="#" class="social__item side">
+            <img src="images/twitter_icon_black.svg" alt="" class="social__img side">
+          </a>
+          <a href="#" class="social__item side">
+            <img src="images/facebook_icon_black.svg" alt="" class="social__img side">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- ./sidebar__inner -->
+</div> <!-- ./sidebar -->
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                 <div class="phone modal-phone">
-                     <div class="phone__body modal-phone">
-                         <video class="modal-phone__video" src="video/use_polonia.mp4" autoplay muted loop></video>
-                     </div>
-                 </div> <!-- ./phone -->
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Polonia App</h3>
-                     <h3 class="modal-work__title" lang="uk">Додаток Полонія</h3>
-                     <div class="modal-work__info" lang="en">
-                         App <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Додаток <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company" lang="en">Polonia Pub</div>
-                    <div class="modal-work__client-company" lang="uk">Паб Полонія</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">React Native, PHP</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="#" class="modal-work__link">
-                        <img src="images/google-play_icon.svg" alt="" class="modal-link__icon">
-                        <span lang="en">View on PlayMarket</span>
-                        <span lang="uk">Дивитися у PlayMarket</span>
-                    </a>
-                    <a href="#" class="modal-work__link">
-                        <img src="images/app-store_icon.svg" alt="" class="modal-link__icon">
-                        <span lang="en">View on AppStore</span>
-                        <span lang="uk">Дивитися у AppStore</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!--Modal Graef-->
-  <div class="modal modal--other" id="modal_project_graef">
-      <div class="modal__dialog">
+<!--Modal Taxi-->
+<div class="modal modal--other" id="modal_project_taxi">
+  <div class="modal__dialog">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                 <div class="phone modal-phone">
-                     <div class="phone__body modal-phone">
-                         <video class="modal-phone__video" src="video/use_graef.mp4" autoplay muted loop></video>
-                     </div>
-                 </div> <!-- ./phone -->
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Graef Gruppe Shop</h3>
-                     <h3 class="modal-work__title" lang="uk">Магазин Graef Gruppe</h3>
-                     <div class="modal-work__info" lang="en">
-                         App <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Додаток <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company" lang="en">Graef Gruppe Deutschland</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">React Native, Laravel</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="#" class="modal-work__link">
-                        <img src="images/google-play_icon.svg" alt="" class="modal-link__icon">
-                        <span lang="en">View on PlayMarket</span>
-                        <span lang="uk">Дивитися в PlayMarket</span>
-                    </a>
-                    <a href="#" class="modal-work__link">
-                        <img src="images/app-store_icon.svg" alt="" class="modal-link__icon">
-                        <span lang="en">View on AppStore</span>
-                        <span lang="uk">Дивитися в AppStore</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!--Modal Underwear-->
-  <div class="modal modal--other" id="modal_project_underwear">
-      <div class="modal__dialog">
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                    <img class="modal-phone__photo" src="images/mac_panties.png">
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Underwear Shop</h3>
-                     <h3 class="modal-work__title" lang="uk">Магазин білизни</h3>
-                     <div class="modal-work__info" lang="en">
-                         Website <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Веб-сайт <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company">Lady Beau</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="https://ladyandbeau.com.ua/" target="_blank" class="modal-work__link">
-                        <span lang="en">Attend web-site</span>
-                        <span lang="uk">Відвідати веб-сайт</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!--Modal Airport-->
-  <div class="modal modal--other" id="modal_project_airport">
-      <div class="modal__dialog">
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div class="phone modal-phone">
+          <div class="phone__body modal-phone">
+            <video class="modal-phone__video" src="video/use_pilot.mp4" autoplay muted loop></video>
+          </div>
+        </div> <!-- ./phone -->
+      </div>
+      <div class="modal-work__content">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                    <img class="modal-phone__photo" src="images/mac_aeroport.png">
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Ternopil Airport Site</h3>
-                     <h3 class="modal-work__title" lang="uk">Веб-сайт Тернопільського аеропорту</h3>
-                     <div class="modal-work__info" lang="en">
-                         Website <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Веб-сайт <span class="modal-work__info-divider">|</span> 2020
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company" lang="en">Ternopil Airport</div>
-                    <div class="modal-work__client-company" lang="uk">Тернопільський Аеропорт</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="http://aeroport.te.ua//" target="_blank" class="modal-work__link">
-                        <span lang="en">Attend web-site</span>
-                        <span lang="uk">Відвідати веб-сайт</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!--Modal Travels-->
-  <div class="modal modal--other" id="modal_project_travels">
-      <div class="modal__dialog">
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Taxi Pilot</h3>
+          <h3 class="modal-work__title" lang="uk">Таксі Пілот</h3>
+          <div class="modal-work__info" lang="en">
+            App <span class="modal-work__info-divider">|</span> 2020
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Додаток <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                    <img class="modal-phone__photo" src="images/mac_travel.png">
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Pathways Travels</h3>
-                     <h3 class="modal-work__title" lang="uk">Веб-сайтPathways Travels</h3>
-                     <div class="modal-work__info" lang="en">
-                         Website <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Веб-сайт <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company">Pathways Travels</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="https://pathwaystravels.org/" target="_blank" class="modal-work__link">
-                        <span lang="en">Attend web-site</span>
-                        <span lang="uk">Відвідати веб-сайт</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!-- Modal Jacht -->
-  <div class="modal modal--other" id="modal_project_jacht">
-      <div class="modal__dialog">
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company" lang="en">Taxi Pilot</div>
+          <div class="modal-work__client-company" lang="uk">Таксі пілот</div>
+        </div>
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                    <img class="modal-phone__photo" src="images/mac_jacht.png">
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">Boat Corporation web-site</h3>
-                     <h3 class="modal-work__title" lang="uk">Веб-сайт Boat Corporation</h3>
-                     <div class="modal-work__info" lang="en">
-                         Website <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         Веб-сторінка <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company">Boat Corporation</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-                <div class="modal-work__footer">
-                    <a href="https://boatcorporation.com/" target="_blank" class="modal-work__link">
-                        <span lang="en">Attend web-site</span>
-                        <span lang="uk">Відвідати веб-сайт</span>
-                    </a>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!-- Modal CRM Beer -->
-  <div class="modal modal--other" id="modal_project_beer">
-      <div class="modal__dialog">
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">React Native, PHP</div>
+        </div>
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                    <img class="modal-phone__photo" src="images/macbook_crm1.png">
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">CRM system for beer factory</h3>
-                     <h3 class="modal-work__title" lang="uk">CRM-система для обліку виробництва пива</h3>
-                     <div class="modal-work__info" lang="en">
-                         CRM-system <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         CRM-система <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company" lang="en">Own Beer Factory</div>
-                    <div class="modal-work__client-company" lang="uk">Пиво власного виробництва</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">HTML, CSS, PHP, AJAX, SQL</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
-  <!-- Modal CRM Sockets -->
-  <div class="modal modal--other" id="modal_project_sockets">
-      <div class="modal__dialog">
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/close_icon.svg" width="24" height="24" alt="Close">
-        </button>
-         
-         <div class="modal-work">
-             <div class="modal-work__preview">
-                    <img class="modal-phone__photo" src="images/macbook_crm3.png">
-             </div>
-             <div class="modal-work__content">
-               
-                <div class="modal-work__header">
-                     <h3 class="modal-work__title" lang="en">CRM-system for sockets factory</h3>
-                     <h3 class="modal-work__title" lang="uk">CRM-система для обліку виробництва шкарпеток</h3>
-                     <div class="modal-work__info" lang="en">
-                         CRM-system <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                     <div class="modal-work__info" lang="uk">
-                         CRM-система <span class="modal-work__info-divider">|</span> 2019
-                     </div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Client:</div>
-                    <div class="modal-work__client-title" lang="uk">Клієнт:</div>
-                    <div class="modal-work__client-company" lang="en">hide</div>
-                    <div class="modal-work__client-company" lang="uk">приховано</div>
-                </div>
-                
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title" lang="en">Techonologies:</div>
-                    <div class="modal-work__client-title" lang="uk">Технології:</div>
-                    <div class="modal-work__client-company">HTML, CSS, PHP, AJAX, SQL</div>
-                </div>
-                
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
-                </div>
-                
-             </div>    <!-- /.modal-work__content-->
-         </div>    <!-- /.modal-work-->
-          
-      </div>    <!--/.modal__dialog-->
-  </div>    <!--/.modal1-->
-  
+        <div class="modal-work__footer">
+          <a href="#" class="modal-work__link">
+            <img src="images/google-play_icon.svg" alt="" class="modal-link__icon">
+            <span lang="en">View on PlayMarket</span>
+            <span lang="uk">Дивитися у PlayMarket</span>
+          </a>
+          <a href="#" class="modal-work__link">
+            <img src="images/app-store_icon.svg" alt="" class="modal-link__icon">
+            <span lang="en">View on AppStore</span>
+            <span lang="uk">Дивитися у AppStore</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!--Modal Polonia-->
+<div class="modal modal--other" id="modal_project_polonia">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div class="phone modal-phone">
+          <div class="phone__body modal-phone">
+            <video class="modal-phone__video" src="video/use_polonia.mp4" autoplay muted loop></video>
+          </div>
+        </div> <!-- ./phone -->
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Polonia App</h3>
+          <h3 class="modal-work__title" lang="uk">Додаток Полонія</h3>
+          <div class="modal-work__info" lang="en">
+            App <span class="modal-work__info-divider">|</span> 2020
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Додаток <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company" lang="en">Polonia Pub</div>
+          <div class="modal-work__client-company" lang="uk">Паб Полонія</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">React Native, PHP</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+        <div class="modal-work__footer">
+          <a href="#" class="modal-work__link">
+            <img src="images/google-play_icon.svg" alt="" class="modal-link__icon">
+            <span lang="en">View on PlayMarket</span>
+            <span lang="uk">Дивитися у PlayMarket</span>
+          </a>
+          <a href="#" class="modal-work__link">
+            <img src="images/app-store_icon.svg" alt="" class="modal-link__icon">
+            <span lang="en">View on AppStore</span>
+            <span lang="uk">Дивитися у AppStore</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!--Modal Graef-->
+<div class="modal modal--other" id="modal_project_graef">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div class="phone modal-phone">
+          <div class="phone__body modal-phone">
+            <video class="modal-phone__video" src="video/use_graef.mp4" autoplay muted loop></video>
+          </div>
+        </div> <!-- ./phone -->
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Graef Gruppe Shop</h3>
+          <h3 class="modal-work__title" lang="uk">Магазин Graef Gruppe</h3>
+          <div class="modal-work__info" lang="en">
+            App <span class="modal-work__info-divider">|</span> 2020
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Додаток <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company" lang="en">Graef Gruppe Deutschland</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">React Native, Laravel</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+        <div class="modal-work__footer">
+          <a href="#" class="modal-work__link">
+            <img src="images/google-play_icon.svg" alt="" class="modal-link__icon">
+            <span lang="en">View on PlayMarket</span>
+            <span lang="uk">Дивитися в PlayMarket</span>
+          </a>
+          <a href="#" class="modal-work__link">
+            <img src="images/app-store_icon.svg" alt="" class="modal-link__icon">
+            <span lang="en">View on AppStore</span>
+            <span lang="uk">Дивитися в AppStore</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!--Modal Underwear-->
+<div class="modal modal--other" id="modal_project_underwear">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <img class="modal-phone__photo" src="images/mac_panties.png">
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Underwear Shop</h3>
+          <h3 class="modal-work__title" lang="uk">Магазин білизни</h3>
+          <div class="modal-work__info" lang="en">
+            Website <span class="modal-work__info-divider">|</span> 2020
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Веб-сайт <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company">Lady Beau</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+        <div class="modal-work__footer">
+          <a href="https://ladyandbeau.com.ua/" target="_blank" class="modal-work__link">
+            <span lang="en">Attend web-site</span>
+            <span lang="uk">Відвідати веб-сайт</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!--Modal Airport-->
+<div class="modal modal--other" id="modal_project_airport">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <img class="modal-phone__photo" src="images/mac_aeroport.png">
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Ternopil Airport Site</h3>
+          <h3 class="modal-work__title" lang="uk">Веб-сайт Тернопільського аеропорту</h3>
+          <div class="modal-work__info" lang="en">
+            Website <span class="modal-work__info-divider">|</span> 2020
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Веб-сайт <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company" lang="en">Ternopil Airport</div>
+          <div class="modal-work__client-company" lang="uk">Тернопільський Аеропорт</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+        <div class="modal-work__footer">
+          <a href="http://aeroport.te.ua//" target="_blank" class="modal-work__link">
+            <span lang="en">Attend web-site</span>
+            <span lang="uk">Відвідати веб-сайт</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!--Modal Travels-->
+<div class="modal modal--other" id="modal_project_travels">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <img class="modal-phone__photo" src="images/mac_travel.png">
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Pathways Travels</h3>
+          <h3 class="modal-work__title" lang="uk">Веб-сайтPathways Travels</h3>
+          <div class="modal-work__info" lang="en">
+            Website <span class="modal-work__info-divider">|</span> 2019
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Веб-сайт <span class="modal-work__info-divider">|</span> 2019
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company">Pathways Travels</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+        <div class="modal-work__footer">
+          <a href="https://pathwaystravels.org/" target="_blank" class="modal-work__link">
+            <span lang="en">Attend web-site</span>
+            <span lang="uk">Відвідати веб-сайт</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!-- Modal Jacht -->
+<div class="modal modal--other" id="modal_project_jacht">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <img class="modal-phone__photo" src="images/mac_jacht.png">
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">Boat Corporation web-site</h3>
+          <h3 class="modal-work__title" lang="uk">Веб-сайт Boat Corporation</h3>
+          <div class="modal-work__info" lang="en">
+            Website <span class="modal-work__info-divider">|</span> 2019
+          </div>
+          <div class="modal-work__info" lang="uk">
+            Веб-сторінка <span class="modal-work__info-divider">|</span> 2019
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company">Boat Corporation</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">HTML, CSS, PHP, WordPress</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+        <div class="modal-work__footer">
+          <a href="https://boatcorporation.com/" target="_blank" class="modal-work__link">
+            <span lang="en">Attend web-site</span>
+            <span lang="uk">Відвідати веб-сайт</span>
+          </a>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!-- Modal CRM Beer -->
+<div class="modal modal--other" id="modal_project_beer">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <img class="modal-phone__photo" src="images/macbook_crm1.png">
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">CRM system for beer factory</h3>
+          <h3 class="modal-work__title" lang="uk">CRM-система для обліку виробництва пива</h3>
+          <div class="modal-work__info" lang="en">
+            CRM-system <span class="modal-work__info-divider">|</span> 2019
+          </div>
+          <div class="modal-work__info" lang="uk">
+            CRM-система <span class="modal-work__info-divider">|</span> 2019
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company" lang="en">Own Beer Factory</div>
+          <div class="modal-work__client-company" lang="uk">Пиво власного виробництва</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">HTML, CSS, PHP, AJAX, SQL</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
+<!-- Modal CRM Sockets -->
+<div class="modal modal--other" id="modal_project_sockets">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>
+      <img src="images/close_icon.svg" width="24" height="24" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <img class="modal-phone__photo" src="images/macbook_crm3.png">
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title" lang="en">CRM-system for sockets factory</h3>
+          <h3 class="modal-work__title" lang="uk">CRM-система для обліку виробництва шкарпеток</h3>
+          <div class="modal-work__info" lang="en">
+            CRM-system <span class="modal-work__info-divider">|</span> 2019
+          </div>
+          <div class="modal-work__info" lang="uk">
+            CRM-система <span class="modal-work__info-divider">|</span> 2019
+          </div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Client:</div>
+          <div class="modal-work__client-title" lang="uk">Клієнт:</div>
+          <div class="modal-work__client-company" lang="en">hide</div>
+          <div class="modal-work__client-company" lang="uk">приховано</div>
+        </div>
+
+        <div class="modal-work__client">
+          <div class="modal-work__client-title" lang="en">Techonologies:</div>
+          <div class="modal-work__client-title" lang="uk">Технології:</div>
+          <div class="modal-work__client-company">HTML, CSS, PHP, AJAX, SQL</div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat non minima voluptas ea perferendis sunt facere corporis est. Quaerat aspernatur praesentium, sint dolor explicabo quo! Et officia voluptas voluptatem iure!</p>
+        </div>
+
+      </div>    <!-- /.modal-work__content-->
+    </div>    <!-- /.modal-work-->
+
+  </div>    <!--/.modal__dialog-->
+</div>    <!--/.modal1-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src='js/app.js'></script>
-    
 
+<script type="text/javascript" src="js/tawk.js"></script>
 </body>
 </html>
