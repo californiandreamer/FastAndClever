@@ -253,20 +253,20 @@
     font-size: 1em;
     font-weight: 500;
     
-    &.boss {
-        font-size: 1.5em;
-        
-        @media @desktop {
-            font-size: 1em;
-        }
-    }
-    
     @media @netbook {
         font-size: .7em;
     }
     
     @media @mobile {
          font-size: .5em;
+    }
+    
+    &.boss {
+        font-size: 1em;
+        
+        @media @mobile {
+            font-size: .7em;
+        }
     }
 }
 
@@ -283,7 +283,13 @@
     }
     
     &.boss {
-        font-size: 1.5rem;
+        @media @tablet {
+            font-size: 1rem;
+        }
+        
+        @media @mobile {
+            font-size: .7rem;
+        }
     }
 }
 
