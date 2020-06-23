@@ -1,229 +1,236 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169213210-1"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-169213210-1');
-  </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <title>F&C Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>F&C Contact</title>
 </head>
-<body>
-<header class="header fixed">
-  <div class="header__inner">
-    <div class="header__left">
-      <a href="index.html" class="logo">
-        <img src="images/F&C_short.png" alt="" class="logo__img">
-      </a>
-      <a href="contact.html" class="contact">
-        <span class="telephone">+38 (067) 990 50 90</span>
-        <span class="mail">support@fastandclever.com</span>
-      </a>
-    </div>
-
-    <div class="header__right">
-      <div class="header__right--inner">
-
-        <a href="https://store.fastandclever.com/" class="shop">
-          <span class="shop__btn" lang="en">Visit our Store</span>
-          <span class="shop__btn" lang="uk">Відвідати магазин</span>
-        </a>
-        <button class="language" type="button" data-lang>
-          <span class="language__text" data-en>EN</span>
-          <span class="language__text" data-uk>UA</span>
-        </button>
-
-      </div>
-      <button class="burger" type="button">
-        <div class="burger__btn"></div>
-      </button>
-    </div> <!-- ./header__right -->
-  </div> <!-- ./header__inner -->
-</header>
-
-<div class="contact__content">
-  <div class="contact__inner">
-    <div class="contact__main-title">
-      <div class="contact__main-text" lang="en">Contact us</div>
-      <div class="contact__main-text" lang="uk">Контакти</div>
-    </div>
-
-    <div class="contact__items">
-      <div class="contact__item">
-        <div class="contact__item-inner">
-          <div class="contact__item-title" lang="en">Phone</div>
-          <div class="contact__item-title" lang="uk">Телефон</div>
-          <div class="contact__item-data"><p>+38(067)990 50 90</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact__item">
-        <div class="contact__item-inner">
-          <div class="contact__item-title">E-mail</div>
-          <div class="contact__item-data mail"><p>support@fastandclever.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact__item">
-        <div class="contact__item-inner">
-          <div class="contact__item-title" lang="en">Adress</div>
-          <div class="contact__item-title" lang="uk">Адреса</div>
-          <div class="contact__item-data" lang="en"><p>Ukraine, Ternopil, Hrushevskoho St. 23</p>
-          </div>
-          <div class="contact__item-data" lang="uk"><p>Україна, м.Тернопіль, вул. Грушевського 23</p>
-          </div>
-        </div>
-      </div>
-    </div> <!-- ./contact__items -->
-
-  </div> <!-- ./contact__inner -->
-</div> <!-- ./contact__content -->
-
-<div class="contact__map">
-  <img src="images/fone_map.jpg" alt="" class="contact__map-img">
-  <div class="contact__map-content">
-    <div class="contact__map-pin">
-      <img src="images/pin_icon.svg" alt="" class="map__pin-img">
-    </div>
-    <a href="https://goo.gl/maps/kSdhFzyEXuWP9Vv39" target="_blank" class="contact__map-text" lang="en">Open map</a>
-    <a href="https://goo.gl/maps/kSdhFzyEXuWP9Vv39" target="_blank" class="contact__map-text" lang="uk">Показати на мапі</a>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="footer__inner">
-    <div class="footer__roots-text" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
-    <div class="footer__roots-text" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
-
-    <div class="social__links">
-      <div class="social__inner">
-        <a href="#" class="social__item">
-          <img src="images/telegram_icon.svg" alt="" class="social__img">
-        </a>
-        <a href="#" class="social__item">
-          <img src="images/instagram_icon.svg" alt="" class="social__img">
-        </a>
-        <a href="#" class="social__item">
-          <img src="images/twitter_icon.svg" alt="" class="social__img">
-        </a>
-        <a href="#" class="social__item">
-          <img src="images/facebook_icon.svg" alt="" class="social__img">
-        </a>
-      </div> <!-- ./social__inner -->
-    </div> <!-- ./social__links -->
-  </div> <!-- ./footer__inner -->
-</footer>
-
-<!-- Sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar__inner">
-    <div class="sidebar__freespace mask black blur"></div>
-
-    <button class="sidebar__close" type="button">
-      <img src="images/close_icon.svg" alt="" class="sidebar__close-img">
-    </button>
-
-    <div class="sidebar__content">
-      <div class="sidebar__insider">
-        <div class="sidebar__items">
-          <!--
-                             <a href="login.html" class="sidebar__item sidebar__login">
-                                 <div class="item__img">
-                                     <img src="images/user.svg" alt="" class="item__img-logo user">
-                                 </div>
-                                 <div class="item__text" lang="en">Log In</div>
-                                 <div class="item__text" lang="uk">Увійти</div>
-                             </a>
-          -->
-          <a href="works.html" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/work_icon.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text" lang="en">Our works</div>
-            <div class="item__text" lang="uk">Наші роботи</div>
-          </a>
-          <a href="wedo.html" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/computer_icon.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text" lang="en">What we do</div>
-            <div class="item__text" lang="uk">Що ми робимо</div>
-          </a>
-          <a href="https://store.fastandclever.com/" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/cart_icon.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text" lang="en">Visit Store</div>
-            <div class="item__text" lang="uk">Відвідати магазин</div>
-          </a>
-          <a href="team.html" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/team.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text" lang="en">Our team</div>
-            <div class="item__text" lang="uk">Наша команда</div>
-          </a>
-          <a href="partners.html" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/handshake.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text wrap" lang="en">Our partners</div>
-            <div class="item__text wrap" lang="uk">Наші партнери</div>
-          </a>
-          <a href="vacancies.html" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/person_icon.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text" lang="en">Vacancies</div>
-            <div class="item__text" lang="uk">Вакансії</div>
-          </a>
-          <a href="contact.html" class="sidebar__item">
-            <div class="item__img">
-              <img src="images/smartphone_icon.svg" alt="" class="item__img-logo">
-            </div>
-            <div class="item__text" lang="en">Contact</div>
-            <div class="item__text" lang="uk">Контакти</div>
-          </a>
-        </div>
-
-      </div> <!-- ./sidebar__insider -->
-
-      <div class="sidebar__social">
-        <div class="social__inner side">
-          <a href="#" class="social__item side">
-            <img src="images/telegram_icon_black.svg" alt="" class="social__img side">
-          </a>
-          <a href="#" class="social__item side">
-            <img src="images/instagram_icon_black.svg" alt="" class="social__img side">
-          </a>
-          <a href="#" class="social__item side">
-            <img src="images/twitter_icon_black.svg" alt="" class="social__img side">
-          </a>
-          <a href="#" class="social__item side">
-            <img src="images/facebook_icon_black.svg" alt="" class="social__img side">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div> <!-- ./sidebar__inner -->
-</div> <!-- ./sidebar -->
+<body> 
+     <header class="header fixed">
+          <div class="header__inner">
+            <div class="header__left">
+             <a href="index.html" class="logo">
+                 <img src="images/F&C_short.png" alt="" class="logo__img">
+             </a>
+             <a href="contact.html" class="contact">
+                 <span class="telephone">+38 (067) 990 50 90</span>
+                 <span class="mail">support@fastandclever.com</span>
+             </a>
+             </div>
+             
+             <div class="header__right">
+               <div class="header__right--inner">
+                
+                 <a href="https://store.fastandclever.com/" class="shop">
+                     <span class="shop__btn" lang="en">Visit our Store</span>
+                     <span class="shop__btn" lang="uk">Відвідати магазин</span>
+                 </a>
+                 <button class="language" type="button" data-lang>
+                     <span class="language__text" data-en>EN</span>
+                     <span class="language__text" data-uk>UA</span>
+                 </button>
+               
+               </div>
+                <button class="burger" type="button">
+                    <div class="burger__btn"></div>
+                </button>
+            </div> <!-- ./header__right -->
+         </div> <!-- ./header__inner -->
+     </header>
+     
+     <div class="contact__content">
+         <div class="contact__inner">
+             <div class="contact__main-title">
+                 <div class="contact__main-text" lang="en">Contact us</div>
+                 <div class="contact__main-text" lang="uk">Контакти</div>
+             </div>
+             
+             <div class="contact__items">
+                 <div class="contact__item">
+                     <div class="contact__item-inner">
+                         <div class="contact__item-title" lang="en">Phone</div>
+                         <div class="contact__item-title" lang="uk">Телефон</div>
+                         <div class="contact__item-text" lang="en">
+                             Contact us with this number at a any comfortable for you time. Also you can find us in Telegram, WhatsApp, Viber and Facebook.
+                         </div>
+                         <div class="contact__item-text" lang="uk">
+                             Не соромтеся, зателефонуйте нам у будь який зручний для вас час. Ми будемо раді відповісти на всі ваші запитання. Також ви можете знайти нас у Telegram, WhatsApp, Viber and Facebook за цим же номером.
+                         </div>
+                         <div class="contact__item-data"><p>+38(067)990 50 90</p>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="contact__item">
+                     <div class="contact__item-inner">
+                         <div class="contact__item-title">E-mail</div>
+                         <div class="contact__item-text" lang="en">
+                             All recommendations, wishes and CV-s you can send to this e-mail. We usually respond in no more than 3 hours.
+                         </div>
+                         <div class="contact__item-text" lang="uk">
+                             Усі рекомендації, побажання та CV ви можете надсилати на ось цю пошту. Зазвичай ми відповідаємо не більш ніж за 3 години. 
+                         </div>
+                         <div class="contact__item-data mail"><p>support@fastandclever.com</p>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="contact__item">
+                     <div class="contact__item-inner">
+                         <div class="contact__item-title" lang="en">Adress</div>
+                         <div class="contact__item-title" lang="uk">Адреса</div>
+                         <div class="contact__item-text" lang="en">
+                             We do not hide our physical address and we want you to know where we are. Click "Show on Map" below to see us on Google Maps.
+                         </div>
+                         <div class="contact__item-text" lang="uk">
+                             Ми не приховуємо нашої фізичної адреси, та хочемо щоб ви знали де ми знаходимося. Натисніть "Показати на мапі" трішки нижче, щоб побачити нас на картах Google.
+                         </div>
+                         <div class="contact__item-data" lang="en"><p>Ukraine, Ternopil, Hrushevskoho St. 23</p>
+                         </div>
+                         <div class="contact__item-data" lang="uk"><p>Україна, м.Тернопіль, вул. Грушевського 23</p>
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- ./contact__items -->
+             
+         </div> <!-- ./contact__inner -->
+     </div> <!-- ./contact__content -->
+     
+     <div class="contact__map">
+         <img src="images/fone_map.jpg" alt="" class="contact__map-img">
+             <div class="contact__map-content">
+                 <div class="contact__map-pin">
+                     <img src="images/pin_icon.svg" alt="" class="map__pin-img">
+                 </div>
+                 <a href="https://goo.gl/maps/kSdhFzyEXuWP9Vv39" target="_blank" class="contact__map-text" lang="en">Open map</a>
+                 <a href="https://goo.gl/maps/kSdhFzyEXuWP9Vv39" target="_blank" class="contact__map-text" lang="uk">Показати на мапі</a>
+             </div>
+     </div>
+     
+     <footer class="footer">
+      <div class="footer__inner">
+          <div class="footer__roots-text" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
+          <div class="footer__roots-text" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
+      
+         <div class="social__links">
+            <div class="social__inner">
+                <a href="#" class="social__item">
+                    <img src="images/telegram_icon.svg" alt="" class="social__img">
+                </a>
+                 <a href="#" class="social__item">
+                    <img src="images/instagram_icon.svg" alt="" class="social__img">
+                </a>
+                 <a href="#" class="social__item">
+                    <img src="images/twitter_icon.svg" alt="" class="social__img">
+                </a>
+                 <a href="#" class="social__item">
+                    <img src="images/facebook_icon.svg" alt="" class="social__img">
+                </a>
+            </div> <!-- ./social__inner -->
+        </div> <!-- ./social__links -->
+      </div> <!-- ./footer__inner -->
+    </footer>
+    
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+      <div class="sidebar__inner">
+       <div class="sidebar__freespace mask black blur"></div>
+       
+       <button class="sidebar__close" type="button">
+           <img src="images/close_icon.svg" alt="" class="sidebar__close-img">
+       </button>
+       
+       <div class="sidebar__content">
+           <div class="sidebar__insider">
+               <div class="sidebar__items">
+<!--
+                   <a href="login.html" class="sidebar__item sidebar__login">
+                       <div class="item__img">
+                           <img src="images/user.svg" alt="" class="item__img-logo user">
+                       </div>
+                       <div class="item__text" lang="en">Log In</div>
+                       <div class="item__text" lang="uk">Увійти</div>
+                   </a>
+-->
+                   <a href="works.html" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/work_icon.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text" lang="en">Our works</div>
+                       <div class="item__text" lang="uk">Наші роботи</div>
+                   </a>
+                   <a href="wedo.html" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/computer_icon.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text" lang="en">What we do</div>
+                       <div class="item__text" lang="uk">Що ми робимо</div>
+                   </a>
+                   <a href="https://store.fastandclever.com/" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/cart_icon.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text" lang="en">Visit Store</div>
+                       <div class="item__text" lang="uk">Відвідати магазин</div>
+                   </a>
+                   <a href="team.html" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/team.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text" lang="en">Our team</div>
+                       <div class="item__text" lang="uk">Наша команда</div>
+                   </a>
+                   <a href="partners.html" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/handshake.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text wrap" lang="en">Our partners</div>
+                       <div class="item__text wrap" lang="uk">Наші партнери</div>
+                   </a>
+                   <a href="vacancies.html" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/person_icon.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text" lang="en">Vacancies</div>
+                       <div class="item__text" lang="uk">Вакансії</div>
+                   </a>
+                   <a href="contact.html" class="sidebar__item">
+                       <div class="item__img">
+                           <img src="images/smartphone_icon.svg" alt="" class="item__img-logo">
+                       </div>
+                       <div class="item__text" lang="en">Contact</div>
+                       <div class="item__text" lang="uk">Контакти</div>
+                   </a>
+               </div>
+               
+           </div> <!-- ./sidebar__insider -->
+              
+               <div class="sidebar__social">
+                    <div class="social__inner side">
+                        <a href="#" class="social__item side">
+                            <img src="images/telegram_icon_black.svg" alt="" class="social__img side">
+                        </a>
+                        <a href="#" class="social__item side">
+                            <img src="images/instagram_icon_black.svg" alt="" class="social__img side">
+                        </a>
+                        <a href="#" class="social__item side">
+                            <img src="images/twitter_icon_black.svg" alt="" class="social__img side">
+                        </a>
+                        <a href="#" class="social__item side">
+                            <img src="images/facebook_icon_black.svg" alt="" class="social__img side">
+                        </a>
+                    </div>
+               </div>
+       </div>
+       </div> <!-- ./sidebar__inner -->
+   </div> <!-- ./sidebar -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script src='js/app.js'></script>
-
-<script type="text/javascript" src="js/tawk.js"></script>
+    
 </body>
 </html>
