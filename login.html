@@ -1,230 +1,240 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/image/x-icon" href="images/favicon.ico">
-    <title>Log In</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169213210-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169213210-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/image/x-icon" href="images/favicon.ico">
+  <title>Log In</title>
 </head>
 <body>
-    <header class="header mobile_none">
-         <div class="header__inner">
-            <div class="header__left">
-             <a href="index.html" class="logo">
-                 <img src="images/F&C_short.png" alt="" class="logo__img">
-             </a>
-             <a href="contact.html" class="contact">
-                 <span class="telephone">+38 (067) 990 50 90</span>
-                 <span class="mail">support@fastandclever.com</span>
-             </a>
-             <a href="#" class="cart">
-                 <img src="images/cart_icon.svg" alt="" class="cart__img">
-             </a>
-             </div>
-             
-             <div class="header__right">
-               <div class="header__right--inner">
-               <button class="language" type="button" data-lang>
-                    <span class="language__text" data-en>EN</span>
-                    <span class="language__text" data-uk>UA</span>
-                </button>
-                <a href="#" class="login">
-                    <span class="login__text" lang="en">Log In</span>
-                    <span class="login__text" lang="uk">Увійти</span>
-                </a>
-               </div>
-                <button class="burger" type="button">
-                    <div class="burger__btn"></div>
-                </button>
-            </div> <!-- ./header__right -->
-         </div> <!-- ./header__inner -->
-     </header>
-     
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar__inner">
-       <div class="sidebar__freespace mask black blur"></div>
-       
-       <button class="sidebar__close" type="button">
-           <img src="images/close_icon.svg" alt="" class="sidebar__close-img">
-       </button>
-       
-       <div class="sidebar__content">
-           <div class="sidebar__insider">
-               <div class="sidebar__items">
-<!--
-                   <a href="login.html" class="sidebar__item sidebar__login">
-                       <div class="item__img">
-                           <img src="images/user.svg" alt="" class="item__img-logo user">
-                       </div>
-                       <div class="item__text" lang="en">Log In</div>
-                       <div class="item__text" lang="uk">Увійти</div>
-                   </a>
--->
-                   <a href="works.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/work_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Our works</div>
-                       <div class="item__text" lang="uk">Наші роботи</div>
-                   </a>
-                   <a href="wedo.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/computer_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">What we do</div>
-                       <div class="item__text" lang="uk">Що ми робимо</div>
-                   </a>
-                   <a href="https://store.fastandclever.com/" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/cart_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Visit Store</div>
-                       <div class="item__text" lang="uk">Відвідати магазин</div>
-                   </a>
-                   <a href="team.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/team.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Our team</div>
-                       <div class="item__text" lang="uk">Наша команда</div>
-                   </a>
-                   <a href="partners.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/handshake.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text wrap" lang="en">Our partners</div>
-                       <div class="item__text wrap" lang="uk">Наші партнери</div>
-                   </a>
-                   <a href="vacancies.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/person_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text wrap" lang="en">Vacancies</div>
-                       <div class="item__text wrap" lang="uk">Вакансії</div>
-                   </a>
-                   <a href="contact.html" class="sidebar__item">
-                       <div class="item__img">
-                           <img src="images/smartphone_icon.svg" alt="" class="item__img-logo">
-                       </div>
-                       <div class="item__text" lang="en">Contact</div>
-                       <div class="item__text" lang="uk">Контакти</div>
-                   </a>
-               </div>
-               
-           </div> <!-- ./sidebar__insider -->
-              
-               <div class="sidebar__social">
-                    <div class="social__inner side">
-                        <a href="#" class="social__item side">
-                            <img src="images/telegram_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                        <a href="#" class="social__item side">
-                            <img src="images/instagram_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                        <a href="#" class="social__item side">
-                            <img src="images/twitter_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                        <a href="#" class="social__item side">
-                            <img src="images/facebook_icon_black.svg" alt="" class="social__img side">
-                        </a>
-                    </div>
-               </div>
-       </div>
-       </div> <!-- ./sidebar__inner -->
-   </div> <!-- ./sidebar -->
-
-    <div class="login__background mobile_none">
-    <div class="login__background-img">
-       <div class="mask lightblack blur">
-           <div class="login__description-inner">
-               <div class="login__title" lang="en">Log In to your account</div>
-               <div class="login__title" lang="uk">Увійдіть до свого акаунту </div>
-               <div class="login__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</div>
-           </div>
-       </div>
+<header class="header mobile_none">
+  <div class="header__inner">
+    <div class="header__left">
+      <a href="index.html" class="logo">
+        <img src="images/F&C_short.png" alt="" class="logo__img">
+      </a>
+      <a href="contact.html" class="contact">
+        <span class="telephone">+38 (067) 990 50 90</span>
+        <span class="mail">support@fastandclever.com</span>
+      </a>
+      <a href="#" class="cart">
+        <img src="images/cart_icon.svg" alt="" class="cart__img">
+      </a>
     </div>
-   </div> <!-- ./login__background -->
-   
-    <div class="phone">
-        <div class="phone__body">
-            <div class="phone__background">
-                <img src="images/planet.jpg" alt="" class="phone__background-img">
-                <div class="maskphone">
-                 
-                 <a href="index.html" class="logo__login">
-                     <img src="images/F&C_short_white.png" alt="" class="logo__img">
-                 </a>
-                  
-                <button class="burger phone" type="button">
-                    <div class="burger__btn phone"></div>
-                </button>
-                   
-                    <div class="phone__content">
-                        <div class="phone__content-inner">
-                            <div class="log__sign">
-                                <div class="phone__login-title" lang="en">Log In</div>
-                                <div class="phone__login-title" lang="uk">Увійти</div>
-                                <a href="#" class="phone__sign-a" lang="en">Sign in</a>
-                                <a href="#" class="phone__sign-a" lang="uk">Реєстрація</a>
-                            </div>
-                            
-                            <div class="phone__forms">
-                                <input type="text" class="phone__email-form" placeholder="E-mail">
-                                <input type="text" class="phone__password-form" placeholder="Password" lang="en">
-                                <input type="text" class="phone__password-form" placeholder="Пароль" lang="uk">
-                            </div>
-                            
-                            <div class="phone__buttons">
-                                <button class="phone__login-btn" lang="en">Log In</button>
-                                <button class="phone__login-btn" lang="uk">Увійти</button>
-                                <button class="phone__loginfacebook-btn" lang="en">Log In with Facebook</button>
-                                <button class="phone__loginfacebook-btn" lang="uk">Увійти з Facebook</button>
-                            </div>
-                        </div>
-                    </div> <!-- ./phone__content -->
-                    
-                </div> <!-- ./maskphone -->
-            </div> <!-- ./phone__background -->
+
+    <div class="header__right">
+      <div class="header__right--inner">
+        <button class="language" type="button" data-lang>
+          <span class="language__text" data-en>EN</span>
+          <span class="language__text" data-uk>UA</span>
+        </button>
+        <a href="#" class="login">
+          <span class="login__text" lang="en">Log In</span>
+          <span class="login__text" lang="uk">Увійти</span>
+        </a>
+      </div>
+      <button class="burger" type="button">
+        <div class="burger__btn"></div>
+      </button>
+    </div> <!-- ./header__right -->
+  </div> <!-- ./header__inner -->
+</header>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar__inner">
+    <div class="sidebar__freespace mask black blur"></div>
+
+    <button class="sidebar__close" type="button">
+      <img src="images/close_icon.svg" alt="" class="sidebar__close-img">
+    </button>
+
+    <div class="sidebar__content">
+      <div class="sidebar__insider">
+        <div class="sidebar__items">
+          <!--
+                             <a href="login.html" class="sidebar__item sidebar__login">
+                                 <div class="item__img">
+                                     <img src="images/user.svg" alt="" class="item__img-logo user">
+                                 </div>
+                                 <div class="item__text" lang="en">Log In</div>
+                                 <div class="item__text" lang="uk">Увійти</div>
+                             </a>
+          -->
+          <a href="works.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/work_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Our works</div>
+            <div class="item__text" lang="uk">Наші роботи</div>
+          </a>
+          <a href="wedo.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/computer_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">What we do</div>
+            <div class="item__text" lang="uk">Що ми робимо</div>
+          </a>
+          <a href="https://store.fastandclever.com/" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/cart_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Visit Store</div>
+            <div class="item__text" lang="uk">Відвідати магазин</div>
+          </a>
+          <a href="team.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/team.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Our team</div>
+            <div class="item__text" lang="uk">Наша команда</div>
+          </a>
+          <a href="partners.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/handshake.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text wrap" lang="en">Our partners</div>
+            <div class="item__text wrap" lang="uk">Наші партнери</div>
+          </a>
+          <a href="vacancies.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/person_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text wrap" lang="en">Vacancies</div>
+            <div class="item__text wrap" lang="uk">Вакансії</div>
+          </a>
+          <a href="contact.html" class="sidebar__item">
+            <div class="item__img">
+              <img src="images/smartphone_icon.svg" alt="" class="item__img-logo">
+            </div>
+            <div class="item__text" lang="en">Contact</div>
+            <div class="item__text" lang="uk">Контакти</div>
+          </a>
         </div>
-   </div> <!-- ./phone -->
-   
-    <div class="login__slogan mobile_none">
-       <div class="login__slogan-inner">
-           <div class="login__slogan-text" lang="en">Become better with us!</div>
-           <div class="login__slogan-text" lang="uk">Ставай кращим разом з нами!</div>
-       </div>
-   </div>
-   
-    <footer class="footer tablet_none">
-      <div class="footer__inner">
-          <div class="footer__roots-text" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
-          <div class="footer__roots-text" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
-      
-         <div class="social__links">
-            <div class="social__inner">
-                <a href="#" class="social__item">
-                    <img src="images/telegram_icon.svg" alt="" class="social__img">
-                </a>
-                 <a href="#" class="social__item">
-                    <img src="images/instagram_icon.svg" alt="" class="social__img">
-                </a>
-                 <a href="#" class="social__item">
-                    <img src="images/twitter_icon.svg" alt="" class="social__img">
-                </a>
-                 <a href="#" class="social__item">
-                    <img src="images/facebook_icon.svg" alt="" class="social__img">
-                </a>
-            </div> <!-- ./social__inner -->
-        </div> <!-- ./social__links -->
-      </div> <!-- ./footer__inner -->
-    </footer>
-   
+
+      </div> <!-- ./sidebar__insider -->
+
+      <div class="sidebar__social">
+        <div class="social__inner side">
+          <a href="#" class="social__item side">
+            <img src="images/telegram_icon_black.svg" alt="" class="social__img side">
+          </a>
+          <a href="#" class="social__item side">
+            <img src="images/instagram_icon_black.svg" alt="" class="social__img side">
+          </a>
+          <a href="#" class="social__item side">
+            <img src="images/twitter_icon_black.svg" alt="" class="social__img side">
+          </a>
+          <a href="#" class="social__item side">
+            <img src="images/facebook_icon_black.svg" alt="" class="social__img side">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- ./sidebar__inner -->
+</div> <!-- ./sidebar -->
+
+<div class="login__background mobile_none">
+  <div class="login__background-img">
+    <div class="mask lightblack blur">
+      <div class="login__description-inner">
+        <div class="login__title" lang="en">Log In to your account</div>
+        <div class="login__title" lang="uk">Увійдіть до свого акаунту </div>
+        <div class="login__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</div>
+      </div>
+    </div>
+  </div>
+</div> <!-- ./login__background -->
+
+<div class="phone">
+  <div class="phone__body">
+    <div class="phone__background">
+      <img src="images/planet.jpg" alt="" class="phone__background-img">
+      <div class="maskphone">
+
+        <a href="index.html" class="logo__login">
+          <img src="images/F&C_short_white.png" alt="" class="logo__img">
+        </a>
+
+        <button class="burger phone" type="button">
+          <div class="burger__btn phone"></div>
+        </button>
+
+        <div class="phone__content">
+          <div class="phone__content-inner">
+            <div class="log__sign">
+              <div class="phone__login-title" lang="en">Log In</div>
+              <div class="phone__login-title" lang="uk">Увійти</div>
+              <a href="#" class="phone__sign-a" lang="en">Sign in</a>
+              <a href="#" class="phone__sign-a" lang="uk">Реєстрація</a>
+            </div>
+
+            <div class="phone__forms">
+              <input type="text" class="phone__email-form" placeholder="E-mail">
+              <input type="text" class="phone__password-form" placeholder="Password" lang="en">
+              <input type="text" class="phone__password-form" placeholder="Пароль" lang="uk">
+            </div>
+
+            <div class="phone__buttons">
+              <button class="phone__login-btn" lang="en">Log In</button>
+              <button class="phone__login-btn" lang="uk">Увійти</button>
+              <button class="phone__loginfacebook-btn" lang="en">Log In with Facebook</button>
+              <button class="phone__loginfacebook-btn" lang="uk">Увійти з Facebook</button>
+            </div>
+          </div>
+        </div> <!-- ./phone__content -->
+
+      </div> <!-- ./maskphone -->
+    </div> <!-- ./phone__background -->
+  </div>
+</div> <!-- ./phone -->
+
+<div class="login__slogan mobile_none">
+  <div class="login__slogan-inner">
+    <div class="login__slogan-text" lang="en">Become better with us!</div>
+    <div class="login__slogan-text" lang="uk">Ставай кращим разом з нами!</div>
+  </div>
+</div>
+
+<footer class="footer tablet_none">
+  <div class="footer__inner">
+    <div class="footer__roots-text" lang="en">@ 2020 Fast&Clever Group. All rights reserved.</div>
+    <div class="footer__roots-text" lang="uk">@ 2020 Fast&Clever Group. Всі права захищено.</div>
+
+    <div class="social__links">
+      <div class="social__inner">
+        <a href="#" class="social__item">
+          <img src="images/telegram_icon.svg" alt="" class="social__img">
+        </a>
+        <a href="#" class="social__item">
+          <img src="images/instagram_icon.svg" alt="" class="social__img">
+        </a>
+        <a href="#" class="social__item">
+          <img src="images/twitter_icon.svg" alt="" class="social__img">
+        </a>
+        <a href="#" class="social__item">
+          <img src="images/facebook_icon.svg" alt="" class="social__img">
+        </a>
+      </div> <!-- ./social__inner -->
+    </div> <!-- ./social__links -->
+  </div> <!-- ./footer__inner -->
+</footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
-
+<script type="text/javascript" src="js/tawk.js"></script>
 </body>
 </html>
