@@ -428,7 +428,7 @@
     left: 0;
     z-index: 1;
     
-    @media @mobile {
+    @media @tablet {
         position: relative;
         padding: 1.8rem 0;
     }
@@ -441,7 +441,11 @@
     
     margin-right: .5rem;
     
-    font-size: .8rem;
+    font-size: 1rem;
+    
+    &.app {
+        font-size: .8rem;
+    }
     
     &:hover {
         text-decoration: underline;
